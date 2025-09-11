@@ -1,0 +1,59 @@
+/*-----------------------------------
+ * SHORTCODES PRODUCTS SLIDER
+ *-----------------------------------*/
+.products-recent-viewed-shortcode-wrap {
+    // Carousel layout
+    &.carousel {
+        position: relative;
+        &:hover {
+            ul.products {
+                .owl-nav {
+                    .owl-prev, .owl-next {
+                        opacity: 1;
+                        @include transition(all .3s ease);
+                    }
+                }
+            }
+        }
+        ul.products {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            list-style-type: none;
+            li.product {
+                position: relative;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            // 
+            .owl-nav {
+                .owl-prev, .owl-next {
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    z-index: 999;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    background: rgba($black, .2);
+                    color: $white;
+                    opacity: 0;
+                    @include translateY(-50%);
+                    @include transition(all .3s ease);
+                    &:hover {
+                        background: rgba($black, .5);
+                        cursor: pointer;
+                    }
+                }
+                .owl-prev {
+                    left: 0;
+                }
+                .owl-next {
+                    right: 0;
+                }
+            }
+        }
+    }
+}

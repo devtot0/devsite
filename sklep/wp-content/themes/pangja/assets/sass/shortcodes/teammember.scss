@@ -1,0 +1,452 @@
+/* TEAM MEMBER */
+.teammember-shortcode-wrap {
+    // Carousel
+    &.carousel {
+        position: relative;
+        &:hover {
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    opacity: 1;
+                    @include transition(all .3s ease);
+                }
+            }
+        }
+        .teammember-list {
+
+        }
+        .team-item {
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+            &:hover {
+                .team-meta {
+                    top: 0;
+                    opacity: 1;
+                }
+                .team-image {
+                    img {
+                        
+                    }
+                    .member-socials {
+
+                    }
+                }
+            }
+            .team-image {
+                img {
+
+                }
+            }
+            .team-meta {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, transparent, rgba($primary_color, 1));
+                opacity: 0;
+                @include transition(all .5s ease-in-out);
+                .team-meta-content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 30px 30px 25px 30px;
+                    display: table;
+                    width: 100%;
+                    @media screen and (max-width: $screen-md-max) {
+                        padding: 20px 20px 15px 20px;
+                    }
+                    .team-info {
+                        display: table-cell;
+                        vertical-align: bottom;
+                    }
+                }
+                .team-title {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: $font-weight-bold;
+                    color: $white;
+                    @media screen and (max-width: $screen-md-max) {
+                        font-size: 16px;
+                    }
+                }
+                .team-position {
+                    position: relative;
+                    margin: 0;
+                    padding-bottom: 2px;
+                    color: $white;
+                    
+                }
+                .member-socials {
+                    list-style: none;
+                    padding: 10px 0 0 0;
+                    margin: 0;
+                    display: table-cell;
+                    vertical-align: bottom;
+                    text-align: right;
+                    li {
+                        display: inline-block;
+                        font-size: 0;
+                        margin: 0 10px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        a {
+                            color: $white;
+                            transition: all .3s;
+                            &:hover {
+                                color: rgba($white, .8);
+                                transition: all .3s;
+                            }
+                        }
+                        i {
+                            font-size: 16px;
+                            display: block;
+                            border-radius: 50%;
+                            text-align: center;
+                            @media screen and (max-width: $screen-md-max) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Navigation
+        .owl-nav {
+            .owl-prev, .owl-next {
+                position: absolute;
+                display: block;
+                top: 50%;
+                z-index: 999;
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                line-height: 40px;
+                text-align: center;
+                background: rgba($black, .2);
+                color: $white;
+                opacity: 0;
+                @include translateY(-50%);
+                @include transition(all .3s ease);
+                &:hover {
+                    background: rgba($black, .5);
+                    cursor: pointer;
+                }
+            }
+            .owl-prev {
+                left: 0;
+            }
+            .owl-next {
+                right: 0;
+            }
+        }
+        // Counter
+        .slider-counter {
+            font-size: 15px;
+            font-weight: 600;
+            color: $white;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            line-height: 40px;
+            @include transform(translateX(-50%));
+        }
+    }
+    // Grid
+    &.grid {
+        .teammember-list {
+            margin-top: 3%;
+            // Columns
+            &.columns-2 {
+                .team-item {
+                    width: 50%;
+                    @media screen and (max-width: $screen-xs-max) {
+                        width: 100%;
+                    }
+                }
+            }
+            &.columns-3 {
+                .team-item {
+                    width: 33.333333%;
+                    @media screen and (max-width: $screen-sm-max) {
+                        width: 33.333333%;
+                    }
+                    @media screen and (max-width: $screen-xs-max) {
+                        width: 100%;
+                    }
+                }
+            }
+            &.columns-4 {
+                .team-item {
+                    width: 25%;
+                    @media screen and (max-width: $screen-sm-max) {
+                        width: 33.333333%;
+                    }
+                    @media screen and (max-width: $screen-xs-max) {
+                        width: 100%;
+                    }
+                }
+            }
+            &.columns-5 {
+                .team-item {
+                    width: 20%;
+                    @media screen and (max-width: $screen-sm-max) {
+                        width: 33.333333%;
+                    }
+                    @media screen and (max-width: $screen-xs-max) {
+                        width: 100%;
+                    }
+                }
+            }
+            // Padding
+            &.padding-15 {
+                margin: 0 -15px;
+                .team-item {
+                    padding: 15px;
+                }
+            }
+            &.padding-10 {
+                margin: 0 -10px;
+                .team-item {
+                    padding: 10px;
+                }
+            }
+        }
+        .teammember-filter {
+            list-style: none;
+            list-style-type: none;
+            padding: 0;
+            &.align_left {
+                text-align: left;
+            }
+            &.align_center {
+                text-align: center;
+            }
+            &.align_right {
+                text-align: right;
+            }
+            // Filter style
+            &.style_1 {
+                li {
+                    display: inline-block;
+                    padding: 0 5px;
+                    margin-bottom: 10px;
+                    a {
+                        border: 1px solid $border_color;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: $fw-semi-bold;    
+                        padding: 5px 25px;
+                        border-radius: 5px;
+                        color: $heading_color;
+                        @include transition(all .3s);
+                        &:hover, &.selected {
+                            background-color: $primary_color;
+                            border-color: $primary_color;
+                            color: $white;
+                            @include transition(all .3s);
+                        }
+                        @media screen and (max-width: $screen-xs-max) {
+                            font-size: 12px;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+            &.style_2 {
+                li {
+                    display: inline-block;
+                    padding: 0 5px;
+                    margin-bottom: 10px;
+                    a {
+                        border: 2px solid rgba($border_color, .2);
+                        display: inline-block;
+                        font-size: 13px;
+                        padding: 6px 25px;
+                        text-transform: uppercase;
+                        @include rounded(20px);
+                        @include transition(all .3s);
+                        &:hover, &.selected {
+                            background-color: $primary_color;
+                            border-color: $primary_color;
+                            color: $white;
+                            @include transition(all .3s);
+                        }
+                        @media screen and (max-width: $screen-xs-max) {
+                            font-size: 12px;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .team-item {
+            border-radius: 6px;
+            &:hover {
+                .team-meta {
+                    top: 0;
+                    opacity: 1;
+                }
+                .team-image {
+                    img {
+                        
+                    }
+                    .member-socials {
+
+                    }
+                }
+            }
+            .team-image {
+                img {
+                    width: 100%;
+                }
+            }
+            .team-content {
+                overflow: hidden;
+                position: relative;
+            }
+            .team-meta {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, transparent, rgba($primary_color, 1));
+                opacity: 0;
+                @include transition(all .5s ease-in-out);
+                .team-meta-content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 20px 10px 25px 20px;
+                    width: 100%;
+                    @media screen and (max-width: $screen-md-max) {
+                        padding: 20px 5px 10px 10px;
+                    }
+                }
+                .team-title {
+                    display: inline-block;
+                    font-size: 20px;
+                    color: $white;
+                    @media screen and (max-width: $screen-md-max) {
+                        font-size: 16px;
+                    }
+                }
+
+                .team-info {
+                    display: flex;
+                    align-items: center;
+                }
+                .team-position {
+                    position: relative;
+                    margin: 0;
+                    padding-right: 15px;
+                    color: $white;
+                    font-size: 14px;
+                    @media screen and (max-width: $screen-md-max) {
+                        font-size: 13px;
+                    }
+                }
+                .member-socials {
+                    list-style: none;
+                    padding: 6px 0 0;
+                    margin: 0;
+                    li {
+                        display: inline-block;
+                        font-size: 0;
+                        margin: 0 10px;
+                        @media screen and (max-width: $screen-md-max) {
+                            margin: 0 6px;
+                        }
+                        a {
+                            color: $white;
+                            transition: all .3s;
+                            &:hover {
+                                color: rgba($white, .8);
+                                transition: all .3s;
+                            }
+                        }
+                        i {
+                            font-size: 14px;
+                            display: block;
+                            border-radius: 50%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Pagination teammember
+.teammember-shortcode-paging-wrapper {
+    margin: 50px 0 20px;
+    text-align: center;
+    .teammember-pagination {
+        font-style: italic;
+        font-weight: $fw-semi-bold;
+        margin-top: 30px;
+        text-align: center;
+        .page-numbers {
+            list-style: none;
+            list-style-type: none;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                padding-right: 25px;
+                span, a {
+                    display: inline-block;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                span.current {
+                    color: $primary_color;
+                }
+                a {
+                    &:hover, &:focus {
+                        background: none;
+                        color: $link_color_hover;
+                    }
+                    &.prev, &.next {
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+        }
+    }
+    // Loadmore style
+    &.paging-load-more {
+        button {
+            background-color: $primary_color;
+            background-image: none;
+            border: 2px solid $primary_color;
+            color: $white;
+            font-weight: $fw-semi-bold;
+            padding: 8px 35px;
+            border-radius: 6px;
+            @include transition(all .3s);
+            &:hover {
+                border: 2px solid $border_color;
+                background-color: transparent;
+                color: $primary_color;
+                @include transition(all .3s);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

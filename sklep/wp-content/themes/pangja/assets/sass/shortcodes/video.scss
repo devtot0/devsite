@@ -1,0 +1,124 @@
+/*-----------------------------------
+ * VIDEO SHORTCODE
+ *-----------------------------------*/
+.video-shortcode-wrap {
+    &.style_1 {
+        text-align: center;
+        height: 100%;
+        .video-shortcode-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%,-50%));
+        }
+        .video-title {
+            color: $white;
+            font-size: 60px;
+            @media screen and (max-width: $screen-sm-max) {
+                font-size: 48px;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                font-size: 36px;
+            }
+            .title-light {
+                font-weight: 100;
+            }
+            .title-bold {
+                font-weight: 700;
+            }
+        }
+        .video-button {
+            a {
+                display: block;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                background: rgba($white, 1);
+                color: $white;
+                position: relative;
+                margin: 0 auto;
+                @include rounded(50%);
+                @media screen and (max-width: $screen-md-max) {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    pointer-events: none;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    padding: 0;
+                    z-index: -1;
+                    opacity: 0;
+                    @include box-shadow(0 0 0 2px rgba(255,255,255,0.1));
+                    @include transform(scale(0.9));
+                    @include rounded(50%);
+                    @include box-sizing(content-box);
+                }
+                &:hover {
+                    &:after {
+                        @include animation(sonarEffect 1.3s ease-out 75ms);
+                    }
+                }
+                i {
+                    font-size: 34px;
+                    margin-left: 6px;
+                    color: $primary_color;
+                    line-height: 100px;
+                    @media screen and (max-width: $screen-md-max) {
+                        font-size: 28px;
+                        line-height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    &.style_2 {
+        .video-button {
+            a {
+                font-weight: $fw-semi-bold;
+                letter-spacing: .05rem;
+                &:hover {
+                    i {
+                        &:after {
+                            @include animation(sonarEffect 1.3s ease-out 75ms);
+                        }
+                    }
+                }
+                i {
+                    width: 42px;
+                    height: 42px;
+                    line-height: 42px;
+                    display: inline-block;
+                    text-align: center;
+                    box-shadow: 0px 2px 10px 0px rgba($black, .2);
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    color: $primary_color;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        pointer-events: none;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        padding: 0;
+                        z-index: -1;
+                        opacity: 0;
+                        @include box-shadow(0 0 0 2px rgba(255,255,255,0.1));
+                        @include transform(scale(0.9));
+                        @include rounded(50%);
+                        @include box-sizing(content-box);
+                    }
+                }
+            }
+        }
+    }
+}

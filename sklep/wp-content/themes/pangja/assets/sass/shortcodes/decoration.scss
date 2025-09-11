@@ -1,0 +1,62 @@
+/* Decoration Shortcode CSS */
+.decoration-shortcode-wrap {
+    // Style 1
+    &.style_1 {
+        position: relative;
+        text-align: center;
+        .decoration-content {
+            .description-info {
+                position: absolute;
+                width: 168px;
+                height: 168px;
+                background-color: $white;
+                top: 50%;
+                left: 50%;
+                font-size: 42px;
+                font-family: $secondary_font;
+                line-height: .9;
+                @include transform(translate(-50%, -50%));
+                @include rounded(50%);
+                @media screen and (max-width: $screen-md-max) {
+                    width: 128px;
+                    height: 128px;
+                    font-size: 28px;
+                }
+                @media screen and (max-width: $screen-xs-max) {
+                    width: 108px;
+                    height: 108px;
+                    font-size: 20px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% - 12px);
+                    height: calc(100% - 12px);
+                    left: 6px;
+                    top: 6px;
+                    padding: 5px;
+                    border: 1px solid rgba($black, .1);
+                    @include rounded(50%);
+                }
+                .decoration-title {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    font-style: italic;
+                    text-align: center;
+                    @include transform(translateY(-50%));
+                    span {
+                        display: block;
+                        padding: 3px 0;
+                        &:first-child {
+                            
+                        }
+                        &:last-child {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

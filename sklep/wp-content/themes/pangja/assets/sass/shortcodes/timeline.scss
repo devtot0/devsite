@@ -1,0 +1,136 @@
+.timeline-shortcode-wrap {
+	&.carousel {
+		.timeline-shortcode-content {
+			.timeline-item {
+				padding: 10px 0;
+				&:focus {
+					outline: none;
+				}
+				.description {
+					padding: 15px 0;
+				}
+			}
+		}
+		.timeline-slider-nav {
+			.thumb-time {
+				position: relative;
+				margin-top: 10px;
+
+				&.slick-current {
+					.time-dot {
+						background-color: $primary_color;
+						&:before {
+							border: 1px solid $primary_color;
+						}
+					}
+					.timeline-time {
+						color: $primary_color;
+					}
+				}
+
+				&:focus {
+					outline: none;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					height: 1px;
+					width: 100%;
+					background-color: $border_color;
+					top: 5px;
+				}
+				.time-dot {
+					display: block;
+					width: 11px;
+					height: 11px;
+					background-color: $border_color;
+					margin: 0 auto;
+					z-index: 2;
+					position: relative;
+					@include rounded(50%);
+
+					&:before {
+						content: '';
+						position: absolute;
+						width: 19px;
+						height: 19px;
+						border-radius: 50%;
+						top: -4px;
+						left: -4px;
+					}
+				}
+				.timeline-time {
+					font-size: 16px;
+					padding-top: 15px;
+					text-align: center;
+				}
+				.timeline-title {
+					text-align: center;
+				}
+			}
+		}
+		// Arrow
+	    .slick-arrow {
+	        &.slick-prev, 
+	        &.slick-next {
+	            background: none;
+	            border: none;
+	            color: transparent;
+	            cursor: pointer;
+	            display: block;
+	            font-size: 0;
+	            line-height: 0;
+	            outline: none;
+	            padding: 0;
+	            position: absolute;
+	            top: -50px;
+	            z-index: 99;
+	            @media screen and (max-width: $screen-sm-max) {
+	            	top: -40px;
+	            }
+	            &:before {
+	                color: $text_color_secondary;
+	                font-family: 'slick';
+	                font-size: 22px;
+	                line-height: 1;
+	                opacity: 1;
+	                display: block;
+	                width: 38px;
+	                height: 38px;
+	                line-height: 36px;
+	                @include transition(all .3s);
+	                @media screen and(max-width: $screen-xs-max) {
+	                	font-size: 18px;
+	                	width: 36px;
+		                height: 36px;
+		                line-height: 34px;
+	                }
+	            }
+	            &:hover {
+	                &:before {
+	                    color: $primary_color;
+	                    @include transition(all .3s);
+	                }
+	            }
+	        }
+	        &.slick-prev {
+	            right: 35px;
+	            &:before {
+	                content: "\f27d";
+	                font-family: Ionicons;
+	            }
+	        }
+	        &.slick-next {
+	            right: 0;
+	            &:before {
+	                content: "\f287";
+	                font-family: Ionicons;
+	            }
+	        }
+	    }
+	}
+	// 
+}

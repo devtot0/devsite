@@ -1,0 +1,38 @@
+/*-----------------------------------
+ * TOPBAR
+ *-----------------------------------*/
+ body.header-sidebar {
+    .haru-top-header {
+        background-color: $white;
+    }
+ }
+.haru-top-header {
+    border-bottom: 1px solid $border_color;
+    font-size: 12px;
+    .topheader-fullwith {
+        padding: 0 5%;
+    }
+    .top-sidebar {
+        &.top-header-left {
+            text-align: left;
+            @media screen and (max-width: $screen-sm-max) {
+                text-align: center;
+            }
+        }
+        &.top-header-right {
+            line-height: 36px;
+            text-align: right;
+            @media screen and (max-width: $screen-sm-max) {
+                text-align: center;
+            }
+        }
+    }
+    &.mobile-top-header-hide {
+        @media screen and ( max-width:$screen-xs-max ) {
+            display: none;
+        }
+    }
+    @media screen and ( max-width:$screen-xs-max ) {
+        height: auto;
+    }
+}

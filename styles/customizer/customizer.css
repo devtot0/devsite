@@ -1,0 +1,17 @@
+div#customizer { position: fixed; top: 75px; left: -321px; z-index: 100; width: 320px; min-height: 300px; max-height: 390px; overflow: hidden; background: #FFF; border: 1px solid #000; border-left: 0px; font-family: 'Open Sans', sans-serif; color: #000; }
+div#customizer_content { width: 260px; margin: 20px; position: relative; }
+a#close_switcher, a#open_switcher { display: block; width: 60px; height: 234px; position: fixed; top: 75px; left: 0px; z-index: 101; border: 1px solid #000; border-left: 0px; }
+a#open_switcher { background: #fff url('open.png') center center no-repeat; }
+a#close_switcher { display: none; left: 320px; background: #fff url('close.png') center center no-repeat; }
+div.switcher_section { margin-bottom: 30px; }
+div.switcher_section h3 { line-height: 1; margin-bottom: 24px; font-size: 15px; font-weight: bold; }
+div.option_title { width: 140px; float: left; font-size: 12px; }
+div.option_values { width: 98px; float: right; }
+div.option_values select { width: 98px; }
+div.option_row { margin-bottom: 6px; }
+div.color_palette { width: 96px; height: 28px; border: 1px solid #CCC; cursor: pointer; }
+div#menu_background, div#home_color, div#testimonials_background, div#contact_title_color { background: #000; }
+div#portfolio_background, div#services_title_color, div#icon_background, div#about_background, div#contact_button_bg { background: #333; }
+div#portfolio_text_color, #quote_text_color, #about_text_color, #testimonials_text_color { background: #CCC; }
+div#services_text_color, div#contact_text_color { background: #666; }
+@media screen and (max-width: 960px) { div#customizer, a#open_switcher { display: none; } }

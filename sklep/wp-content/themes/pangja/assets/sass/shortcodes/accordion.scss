@@ -1,0 +1,59 @@
+.accordion-shortcode-wrap {
+	&.style_1 {
+		.accordion-shortcode-content {
+			.panel {
+				border: 1px solid $border_color;
+				padding: 0 30px;
+				margin-bottom: 10px;
+				@include box-shadow(none);
+				@media screen and (max-width: $screen-md-max) {
+					padding: 0 15px;
+				}
+				&.active {
+					border-color: $primary_color;
+				}
+			}
+			.panel-heading {
+				padding: 0;
+				position: relative;
+				a {
+					color: $heading_color;
+					display: block;
+					font-size: 16px;
+					padding: 20px 0;
+					line-height: 1.4;
+					@media screen and (max-width: $screen-md-max) {
+		                font-size: 14px;
+		                padding: 15px 0;
+		            }
+					&.in,
+					&[aria-expanded="true"] {
+						&:before {
+							content: "\f107";
+							color: $primary_color;
+						}
+					}
+					&.collapsed {
+						border-bottom: 1px solid transparent;
+						&:before {
+							content: "\f105";
+							color: $heading_color;
+						}
+					}
+					&:before {
+						content: "\f105";
+						color: $heading_color;
+						font-family: FontAwesome;
+						top: 50%;
+						margin-right: 10px;
+						@include transform(translateY(-50%));
+					}
+				}
+			}
+			.panel-body {
+				border-top: 1px solid $border_color;
+				padding-left: 0;
+			}
+		}
+	} 
+}

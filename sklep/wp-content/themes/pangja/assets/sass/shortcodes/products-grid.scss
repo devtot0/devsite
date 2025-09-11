@@ -1,0 +1,212 @@
+/*-----------------------------------
+ * SHORTCODES PRODUCTS GRID
+ *-----------------------------------*/
+// Header Sidebar for 5 columns
+body.header-sidebar {
+    .products-shortcode-wrap {
+        &.grid, 
+        &.masonry {
+            // Product main display
+            ul.products {
+                &.shortcode-product-columns-5 {
+                    @media screen and ( max-width: 1600px ) {
+                        li.product,
+                        li.type-product {
+                            width: 25%;
+                        }
+                    }
+                    @media screen and ( max-width: $screen-md-max ) {
+                        li.product,
+                        li.type-product {
+                            width: 33.333333%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.product,
+                        li.type-product {
+                            width: 33.333333%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.product,
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+                &.shortcode-product-columns-4 {
+                    @media screen and ( max-width: $screen-md-max ) {
+                        li.product,
+                        li.type-product {
+                            width: 33.333333%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.product,
+                        li.type-product {
+                            width: 33.333333%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.product,
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.products-shortcode-wrap {
+    &.grid, 
+    &.masonry {
+        // Filter
+        .product-filters {
+            ul {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin-bottom: 20px;
+                &.filter-center {
+                    text-align: center;
+                }   
+                &.filter-left {
+                    text-align: left;
+                }
+                &.filter-right {
+                    text-align: right;
+                }
+                // Filter style 1
+                &.style_1 {
+                    li {
+                        display: inline-block;
+                        a {
+                            display: block;
+                            color: $heading_color;
+                            cursor: pointer;
+                            padding: 6px 25px;
+                            margin: 5px;
+                            border: 1px solid $border_color;
+                            border-radius: 5px;
+                            background-color: $white;
+                            font-weight: $fw-semi-bold;
+                            @media screen and (max-width: $screen-xs-max) {
+                                font-size: 12px;
+                                padding: 6px 15px;
+                            }
+                            &:hover,
+                            &.selected {
+                                background-color: $primary_color;
+                                border: 1px solid $primary_color;
+                                color: $white;
+                                @include transition(all .3s);
+                            }
+                            &.selected {
+
+                            }
+                        }
+                    }
+                    // Responsive
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                // Filter style 2
+                &.style_2 {
+                    li {
+                        display: inline-block;
+                    }
+                }
+                
+            }
+        }
+        // Product main display
+        ul.products {
+            margin-left: -15px;
+            margin-right: -15px;
+            &.shortcode-product-columns-2 {
+                li.product,
+                li.type-product {
+                    width: 50%;
+                    float: left;
+                }
+                // Responsive
+                @media screen and ( max-width:$screen-sm-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 33.333333%;
+                    }
+                }
+                @media screen and ( max-width:$screen-xs-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 50%;
+                    }
+                }
+            }
+            &.shortcode-product-columns-3 {
+                li.product,
+                li.type-product {
+                    width: 33.333333%;
+                    float: left;
+                }
+                @media screen and ( max-width:$screen-xs-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 50%;
+                    }
+                }
+            }
+            &.shortcode-product-columns-4 {
+                li.product,
+                li.type-product {
+                    width: 25%;
+                    float: left;
+                }
+                // Responsive
+                @media screen and ( max-width:$screen-sm-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 33.333333%;
+                    }
+                }
+                @media screen and ( max-width:$screen-xs-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 50%;
+                    }
+                }
+            }
+            &.shortcode-product-columns-5 {
+                li.product,
+                li.type-product {
+                    width: 20%;
+                    float: left;
+                }
+                // Responsive
+                @media screen and ( max-width: $screen-md-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 25%;
+                    }
+                }
+                @media screen and ( max-width:$screen-sm-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 33.333333%;
+                    }
+                }
+                @media screen and ( max-width:$screen-xs-max ) {
+                    li.product,
+                    li.type-product {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

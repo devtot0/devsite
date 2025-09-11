@@ -1,0 +1,467 @@
+// Need use this don't use in theme options
+.body-font {
+    font-family: $body_font;
+}
+.secondary-font {
+    font-family: $secondary_font;
+}
+.text-color {
+    color: $text_color;
+}
+.text-color-secondary {
+    color: $text_color_secondary;
+    a {
+        color: $text_color_secondary;
+        transition: all .3s;
+        &:hover {
+            color: $primary_color;
+            transition: all .3s;
+        }
+    }
+}
+.text-heading {
+    color: $heading_color;
+}
+.text-white {
+    color: $white;
+}
+.text-primary {
+    color: $primary_color;
+}
+.text-revo-shadow {
+    text-shadow: 0px 2px 1px rgba($black, .2); 
+}
+// Revo
+.wpb_revslider_element {
+    margin-bottom: 0!important;
+}
+// Align
+.rs-align {
+    &-xs {
+        &-left {
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: left!important;
+            }
+        }
+        &-center {
+            @media screen and (max-width: $screen-xs-max) {
+                text-align: center!important;
+            }
+        }
+    }
+}
+// 
+.overlay-bg-col {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary_color, .8);
+    @media screen and (max-width: $screen-xs-max) {
+        width: 100%!important;
+    }
+}
+// 
+// Revolution Slider button
+.revo_button_1 {    
+    background-color: $primary_color!important;
+    background-image: none!important;
+    border: 2px solid $primary_color!important;
+    color: $white!important;
+    font-weight: $font-weight-bold!important;
+    padding: 9px 30px!important;
+    // min-width: 140px!important;
+    letter-spacing: .05em!important;
+    border-radius: 6px!important;
+    line-height: 21px!important;
+    font-size: 14px!important;
+    text-align: center!important;
+    &:hover {
+        background-color: $secondary_color!important;
+        border: 2px solid $secondary_color!important;
+    }
+}
+
+.revo_button_2 {    
+    background-color: transparent!important;
+    background-image: none!important;
+    border: 2px solid $border_color!important;
+    color: $heading_color!important;
+    font-weight: $font-weight-bold!important;
+    padding: 9px 30px!important;
+    // min-width: 140px!important;
+    letter-spacing: .05em!important;
+    border-radius: 6px!important;
+    line-height: 21px!important;
+    font-size: 14px!important;
+    text-align: center!important;
+    &:hover {
+        background-color: $primary_color!important;
+        border: 2px solid $primary_color!important;
+        color: $white!important;
+    }
+}
+// Home 1
+.image-services-1 {
+    margin-left: -18vw;
+    @media screen and (max-width: $screen-md-max) {
+        margin-left: -10vw;
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        margin-left: -30vw;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        margin-left: -2vw;
+    }
+}
+.services-1 {
+    margin-top: 20%;
+    @media screen and (max-width: $screen-md-max) {
+        margin-top: 0;
+    }
+}
+
+.slideshow-home-1 {
+    .wpb_content_element {
+        margin-bottom: 0;
+    }
+}
+.shape-slide {
+    // background: linear-gradient(to top right, transparent 50%, $primary_color 50%)!important;
+    background: $primary_color!important;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 13%);
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0 12%);
+}
+.video-home-1,
+.video-home-6 {
+    .wpb_wrapper,
+    .vc_column-inner,
+    .vc_column_container {
+        height: 100%;
+        @media screen and (max-width: $screen-xs-max) {
+            min-height: 300px;
+        }
+    }
+    .wpb_wrapper > div {
+        height: 90%;
+    }
+}
+.video-home-1,
+.video-home-6 {
+    position: relative;
+}
+
+.contact-home-1 {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    > .vc_column_container {
+        background-color: $white;
+        > .vc_column-inner {
+            padding-top: 0!important;
+        }
+    }
+    .map-column {
+        > .vc_column-inner {
+            padding: 0;
+        }
+    }
+}
+.home-1-contact-form {
+    padding: 0 5%;
+    background-repeat: no-repeat;
+    background-position: top 80% left 15%;
+}
+.home-1-footer-copyright {
+    color: $white;
+    a {
+        color: $white;
+        transition: all .3s;
+        &:hover {
+            color: rgba($white, .8);
+            transition: all .3s;
+        }
+    }
+}
+// Home 2
+.img-sale-2 {
+    margin-bottom: 0!important;
+    margin-left: -12vw;
+}
+.sale-home-2 {
+    margin-top: 8%;
+    @media screen and ( max-width:$screen-sm-max ) {
+        margin-top: 5%;
+    }
+    @media screen and ( max-width:$screen-xs-max ) {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+.home-2-icon-box {
+    margin-top: 4%;
+}
+.footer-copyright-3 {
+    color: $heading_color;
+    a {
+        color: $heading_color;
+        transition: all .3s;
+        &:hover {
+            color: $primary_color;
+            transition: all .3s;
+        }
+    }
+}
+// Home 3
+.testimonial-3 {
+    padding: 10% 8% 20% 8%;
+}
+.footer-copyright-primary {
+    color: $white;
+    a {
+        color: $white;
+        transition: all .3s;
+        &:hover {
+            color: rgba($white, .8);
+            transition: all .3s;
+        }
+    }
+}
+
+// Home 4
+.we-do-home-4 {
+    padding-top: 3%;
+    @media screen and (max-width: $screen-md-max) {
+        padding-top: 0;
+    }
+}
+
+// Home 5
+.we-do-home-5 {
+    padding: 0 5% 3% 5%!important;
+}
+.services-home-1 {
+    margin-top: 20%;
+    @media screen and (max-width: $screen-xs-max) {
+        margin-top: 0;
+    }
+}
+.logo-footer-5 {
+    @media screen and (max-width: $screen-xs-max) {
+        text-align: center!important;
+    }
+}
+// Home 6
+.faq-home-3 {
+    background-repeat: no-repeat;
+    background-size: 52% auto;
+    background-position: bottom left;
+    @media screen and (max-width: $screen-xs-max) {
+        background-size: 100% auto;
+    }
+}
+.faq-image-home3 {
+    max-width: 70%;
+    margin-left: -25%;
+    margin-top: 40%;
+    @media screen and (max-width: $screen-md-max) {
+        max-width: 100%;
+        margin-left: -15%;
+        margin-top: 15%;
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        margin-left: 0;
+        margin-top: 15%;
+    }
+}
+// Slideshow
+
+// About page
+.about-us-heading {
+    padding-top: 5%;
+    @media screen and (max-width: $screen-md-max) {
+        padding-top: 2%;
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        padding-top: 0;
+    }
+}
+.about-us-image {
+
+}
+.about-image-22 {
+    margin-bottom: 0!important;
+    margin-left: -18vw;
+    margin-right: 5%;
+    @media screen and (max-width: $screen-md-max) {
+        margin-left: -13vw;
+        margin-top: 18%;
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        margin-top: 25%;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+.vc_row.about-us-decor {
+    padding-top: 2%;
+    padding-bottom: 6%;
+    margin-top: -80px;
+    @media screen and (max-width: $screen-sm-max) {
+        margin-top: -30px;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        background-image: none!important;
+    }
+}
+
+// Services
+.vc_row.our-services-1 {
+    background-position: top -20% left 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.our-services-2 {
+    background-position: top 50vh left 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.banner-services-2 {
+    margin-left: -20vw;
+    @media screen and (max-width: $screen-sm-max) {
+        margin-left: -10vw;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        margin-left: -5vw;
+    }
+}
+.services-title-1 {
+    padding-top: 10%;
+    @media screen and (max-width: $screen-md-max) {
+        padding-top: 5%;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        padding-top: 0;
+    }
+}
+.our-services-title-2 {
+    padding-top: 5%;
+    @media screen and (max-width: $screen-md-max) {
+        padding-top: 0;
+    }
+}
+
+// Contact page
+
+
+.rotate-left {
+    @include rotate(-90deg);
+    position: absolute;
+    left: -24%;
+    bottom: 17%;
+}
+.rotate-right {
+    @include rotate(90deg);
+    position: absolute;
+    right: -43%;
+    bottom: 27%;
+}
+.vertical-menu-holder {
+    @media screen and (max-width: $screen-sm-max) {
+        min-height: 0;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        min-height: 1px;
+    }
+}
+// Banner
+
+// 
+.row-parallax {
+    background-position: center;
+}
+// Haru Responsive
+.haru-col-sm-0 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 0!important;
+        min-height: 0!important;  
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-2 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 16.666666%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-3 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 25%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-4 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 33.333333%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-5 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 41.666666%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-6 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 50%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+    &:nth-child(3) {
+        @media screen and (max-width: $screen-sm-max) {
+            clear: left;
+        }
+        @media screen and (max-width: $screen-xs-max) {
+            clear: none;
+        }
+    }
+}
+.haru-col-sm-7 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 58.333333%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-8 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 66.666666%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}
+.haru-col-sm-12 {
+    @media screen and (max-width: $screen-sm-max) {
+        width: 100%!important;    
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        width: auto!important;    
+    }
+}

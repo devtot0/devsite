@@ -1,0 +1,28 @@
+// Header-6
+header {
+    &.header-6 {
+        // Nav
+        .haru-header-nav-wrap {
+            .header-navigation {
+                .menu-wrap {
+                    .haru-main-menu {
+                        > li {
+                            > a {
+                                line-height: 105px;
+                            }
+                        }
+                    }
+                }
+                .header-right {
+                    .header-elements {
+                        margin-left: 5px;
+                        .header-elements-item {
+                            margin-left: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        // Sticky
+    }
+}

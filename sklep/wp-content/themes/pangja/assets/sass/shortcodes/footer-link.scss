@@ -1,0 +1,203 @@
+.footer-link-shortcode-wrap {
+    // Style 1
+    &.style_1 {
+        .footer-link-content {
+            .link-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                padding-top: 5px;
+                a {
+                    padding: 10px 0;
+                    display: block;
+                    line-height: 1;
+                    color: $text_color_secondary;
+                    &::before {
+                        content:'\f105';
+                        display: inline-block;
+                        font-family: FontAwesome;
+                        margin-right: 0px;
+                        color: $primary_color;
+                        width: 0;
+                        opacity: 0;
+                        @include transition(all .35);
+                    }
+                    &:hover {
+                        color: $white;
+                        &::before {
+                            color: $primary_color;
+                            opacity: 1;
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    // Style 2
+    &.style_2 {
+        .footer-link-content {
+            .link-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 8px 0;
+                    &:first-child {
+                        margin-top: 25px;
+                    }
+                    a {
+                        color: $white;
+                        padding-bottom: 1px;
+                        border-bottom: 1px solid transparent;
+                        @include transition(all .3s);
+                        display: block;
+                        position: relative;
+                        &:before {
+                            content: '\f105';
+                            font-family: "FontAwesome";
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            font-weight: 900;
+                            opacity: 0;
+                            @include transition(all .3s);
+                        }
+                        &:hover {
+                            color: $white;
+                            padding-left: 15px;
+                            &::before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Style 3
+    &.style_3 {
+        .footer-link-content {
+            .link-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                font-weight: $fw-semi-bold;
+                @media screen and (max-width: $screen-xs-max) {
+                    text-align: left;
+                }
+                li {
+                    display: block;
+                    font-size: 16px;
+                    @media screen and (max-width: $screen-sm-max) {
+                        font-size: 15px;
+                    }
+                    a {
+                        padding: 10px 0;
+                        display: block;
+                        color: $heading_color;
+                        &::before {
+                            content:'\f138';
+                            display: inline-block;
+                            font-family: FontAwesome;
+                            margin-right: 10px;
+                            color: $primary_color;
+                        }
+                        &:hover {
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Style 4
+    &.style_4 {
+        .footer-link-content {
+            .link-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                padding-top: 5px;
+                li {
+                    
+                }
+                a {
+                    padding: 10px 0;
+                    display: block;
+                    color: $heading_color;
+                    @include transition(all .3s);
+                    &:hover {
+                        color: $primary_color;
+                        @include transition(all .3s);
+                    }
+                }
+            }
+        }
+    }
+    // Style 5
+    &.style_5 {
+        text-align: center;
+        .footer-link-content {
+            .link-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                display: inline-block;
+            }
+            a {
+                margin-right: 20px;
+                display: block;
+                color: $heading_color;
+                @include transition(all .3s);
+                &:hover {
+                    color: $primary_color;
+                    @include transition(all .3s);
+                }
+            }
+        }
+    }
+    // Style 6
+    &.style_6 {
+        text-align: left;
+        .footer-link-content {
+            .link-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                @media screen and (max-width: $screen-xs-max) {
+                    text-align: center;
+                }
+            }
+            li {
+                display: inline-block;
+            }
+            a {
+                margin-right: 20px;
+                display: block;
+                color: $heading_color;
+                text-transform: uppercase;
+                @include transition(all .3s);
+                @media screen and (max-width: $screen-md-max) {
+                    margin-right: 15px;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    margin-right: 10px;                
+                }
+                &:hover {
+                    color: $primary_color;
+                    @include transition(all .3s);
+                }
+            }
+        }
+    }
+}

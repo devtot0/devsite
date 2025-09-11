@@ -1,0 +1,276 @@
+// Product creative
+.haru-woo-shortcodes-products-ajax-creative {
+    // Filter Position
+    &.filter_center {
+        .products-tabs {
+            text-align: center;
+        }
+    }   
+    &.filter_left {
+        .products-tabs {
+            text-align: left;
+        }
+    }
+    &.filter_right {
+        .products-tabs {
+            text-align: right;
+        }
+    }
+    // Products Tab
+    .products-tabs {
+        list-style: none;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 40px;
+        li {
+            display: inline-block;
+            &.current {
+                span {
+                    color: $primary_color;
+                    @include transition(all .3s);
+                    &:after {
+                        opacity: 1;
+                        @include transition(all .3s);
+                    }
+                }
+            }
+            span {
+                display: block;
+                color: $text_color_secondary;
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 6px 20px;
+                position: relative;
+                cursor: pointer;
+                @media screen and (max-width: $screen-xs-max) {
+                    font-size: 12px;
+                    padding: 6px 15px;
+                }
+                &:hover,
+                &.selected {
+                    color: $primary_color;
+                    @include transition(all .3s);
+                }
+                &.selected {
+                    &:after {
+                        opacity: 1;
+                        @include transition(all .3s);
+                    }
+                }
+                &:after {
+                    content: "*";
+                    font-size: 20px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -20px;
+                    opacity: 0;
+                    @include transform(translateX(-50%));
+                    @include transition(all .3s);
+                }
+            }
+        }
+        // Responsive
+        @media screen and ( max-width:$screen-xs-max ) {
+            li {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .products-content {
+        overflow: hidden;
+        min-height: 300px;
+        @include transition(all 0.35s ease);
+        &.loading {
+            position: relative;
+            @include transition(all 0.35s ease);
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: -1px;
+                left: 0;
+                z-index: 5;
+                background-color: $white;
+            }
+            &:before {
+                content: '\f110';
+                font-family: fontAwesome;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                -webkit-animation: fa-spin 2s infinite linear;
+                animation: fa-spin 2s infinite linear;
+                z-index: 6;
+                font-size: 24px;
+                @include translateX(-50%);
+
+            }
+        }
+        // Grid
+        &.grid {
+            ul.products {
+                margin: 0 -15px;
+                padding: 0;
+                li.type-product {
+                    position: relative;
+                    padding: 20px 10px 5px 10px;
+                    margin: 0;
+                }
+                &.columns-2 {
+                    li.type-product {
+                        width: 50%;
+                    }
+                    // Responsive
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+                &.columns-3 {
+                    li.type-product {
+                        width: 33.333333%;  
+                    }
+                    // Responsive
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+                &.columns-4 {
+                    li.type-product {
+                        width: 25%;
+                        &:nth-child(2) {
+                            width: 50%;
+                            @media screen and ( max-width:$screen-sm-max ) {
+                                width: 33.333333%;
+                            }
+                            @media screen and ( max-width:$screen-xs-max ) {
+                                width: 50%;
+                            }
+                        }
+                    }
+                    // Responsive
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.type-product {
+                            width: 33.333333%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+                &.columns-5 {
+                    li.type-product {
+                        width: 20%;
+                    }
+                    // Responsive
+                    @media screen and ( max-width: $screen-md-max ) {
+                        li.type-product {
+                            width: 25%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+                &.columns-6 {
+                    li.type-product {
+                        width: 16.666666%;
+                    }
+                    // Responsive
+                    @media screen and ( max-width: $screen-md-max ) {
+                        li.type-product {
+                            width: 25%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-sm-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                    @media screen and ( max-width:$screen-xs-max ) {
+                        li.type-product {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        // Slider
+        &.slider {
+            padding-left: 20px;
+            padding-right: 20px;
+            ul.products {
+                margin-bottom: 0;
+                padding: 0;
+                &:hover {
+                    .owl-nav{
+                        opacity: 1;
+                        @include transition(all 0.35s ease);
+                    }
+                }
+                li.type-product {
+                    list-style: none;
+                    list-style-type: none;
+                    width: 100%!important;
+                    padding: 0!important;
+                    margin: 20px 0;
+                }
+                .owl-nav {
+                    opacity: 0;
+                    @include transition(all 0.35s ease);
+                    .owl-prev, .owl-next {
+                        position: absolute;
+                        display: block;
+                        top: 40%;
+                        z-index: 99;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background: rgba($black, .2);
+                        color: $white;
+                        &:hover {
+                            background: rgba($black, .4);
+                            cursor: pointer;
+                            @include transition(all .3s ease);
+                        }
+                    }
+                    .owl-next {
+                        right: 0;
+                    }
+                    .owl-prev {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .see-more-wrapper {
+        display: none;
+    }
+}

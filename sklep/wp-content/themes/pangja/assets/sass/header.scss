@@ -1,0 +1,600 @@
+/*-----------------------------------
+ * HEADER
+ *-----------------------------------*/
+@import "header/top-header";
+@import "header/header-1";
+@import "header/header-2";
+@import "header/header-3";
+@import "header/header-10";
+@import "header/header-4";
+@import "header/header-5";
+@import "header/header-6";
+@import "header/header-7";
+// Header left menu
+@import "header/header-8";
+// Header Vertical Bar
+@import "header/megamenu";
+@import "header/header-mobile";
+@import "header/header-elements";
+@import "header/popup-menu";
+@import "header/onepage-menu";
+
+// Special case when have admin bar
+body {
+    &.admin-bar {
+        header.haru-main-header {
+            &.header-under-slideshow {
+                top: calc(100% + 32px);
+            }
+            .haru-header-nav-wrap {
+                &.nav-sticky {
+                    top: 32px;
+                }
+            }
+        }
+
+    }
+    &.layout-float {
+        header.haru-main-header {
+            padding: 0 100px;
+            @media screen and (max-width: $screen-lg-max) {
+                padding: 0 50px;
+            }
+        }
+    }
+}
+
+// Header main
+header.haru-main-header {
+    background-color: $white;
+    position: relative;
+    z-index: 1000;
+    // Hidden on mobile
+    @media screen and (max-width: $screen-sm-max) {
+        display: none;
+    }
+    // General style
+    .haru-header-nav-wrap {
+        .header-navigation {
+            .menu-wrap {
+                .haru-main-menu {
+                    // Only apply option for level 1
+                    > li {
+                        &.current-menu-item {
+                            > a {
+                                &:before {
+                                    
+                                }
+                            }
+                        }
+                        > a {
+                            color: $header_nav_text_color;
+                            font-size: $menu_font_size;
+                            font-weight: $menu_font_weight;
+                            padding: 0 20px;
+                            letter-spacing: .1em;
+                            @media screen and (max-width: 1600px) {
+                                letter-spacing: .1em;
+                            }
+                            @media screen and (max-width: $screen-lg-max) {
+                                font-size: 13px;
+                                letter-spacing: 0;
+                            }
+                            @media screen and (max-width: $screen-md-max) {
+                                font-size: 13px;
+                                padding: 0 15px;
+                            }
+                            &:before {
+                                
+                            }
+                            &:after {
+                                // display: none;
+                            }
+                            &:only-child:before {
+                                left: calc(50% - 6px);
+                            }
+                        }
+                        &:hover {
+                            > a {
+                                color: $primary_color;
+                                &:before {
+                                    opacity: 1;
+                                    @include transition(all .3s ease);
+                                }
+                            }
+                        }
+                        > ul {
+                            background: $white;
+                        }
+                    }
+                    li.current-menu-item {
+                        > a {
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // HEADER LOGO RETINA FOR HIGH RESOLUTION DISPLAY
+    .header-logo {
+        a {
+            &.logo-black {
+                display: none;
+            }
+            &.logo-retina {
+                display: none;
+            }
+            &.logo-sticky {
+                display: none;
+            }
+            @media only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (-o-min-device-pixel-ratio: 2/1),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2) {
+                &.logo-default {
+                    display: none;
+                }
+                &.logo-retina {
+                    display: block;
+                }
+            }
+            img {
+                max-height: 35px;
+            }
+        }
+    }
+    // Header On Slideshow - Menu over Slideshow
+    &.header-over-slideshow {
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        right: 0;
+        
+        // Sticky Header
+        &.header-sticky {
+            &.sticky_light,
+            &.sticky_dark {
+                .haru-header-nav-wrap {
+                    background-color: transparent;
+                }
+            }
+            &.sticky {
+                &.sticky_light {
+                    .haru-header-nav-wrap {
+                        background-color: $white;
+                    }
+                }
+                &.sticky_dark {
+                    .haru-header-nav-wrap {
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+
+        &.navigation_dark:not(.sticky) {
+            @include transition(all .3s);
+            // Override header 5
+            #popup-menu-button {
+                background-color: $text_color;
+                &:hover,
+                &:active {
+                    background-color: $primary_color;
+                }
+            }
+            // Default text_color and link_hover
+            &.header-hover-on {
+                &:hover {
+                    background-color: $white;
+                    @include transition(all .3s);
+                }
+            }
+        }
+        &.navigation_light:not(.sticky) {
+            @include transition(all .3s);
+            &.header-hover-on {
+                &:hover {
+                    background-color: $white;
+                    @include transition(all .3s);
+                    // Return default color all header elements (similar sticky light)
+                    .haru-header-nav-wrap {
+                        .post-category-wrap {
+                            .categories {
+                                border: 1px solid $border_color;
+                                &:hover {
+                                    border: 1px solid $primary_color;
+                                    &:before {
+                                        background-color: $primary_color;
+                                    }
+                                    h2 {
+                                        color: $primary_color;
+                                    }
+                                }
+                                &:before {
+                                    background-color: $text_color;
+                                }
+                                h2 {
+                                    color: $text_color;
+                                }
+                            }
+                        }
+                        #popup-menu-button {
+                            background-color: $text_color;
+                            &:hover {
+                                background-color: $primary_color;
+                            }
+                        }
+                        .header-nav-above {
+                            .menu-wrap {
+                                .haru-main-menu {
+                                    > li {
+                                        &.current-menu-item {
+                                            > a {
+                                                color: $primary_color;
+                                                &:before {
+                                                    background-color: $primary_color;
+                                                }
+                                            }
+                                        }
+                                        > a {
+                                            color: $text_color;
+                                            &:hover {
+                                                color: $primary_color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .header-elements-item {
+                        a.header-icon,
+                        i.header-icon {
+                            color: $text_color;
+                            @include transition(all .3s);
+
+                            &:hover {
+                                color: $primary_color;
+                                @include transition(all .3s);
+                            }
+                        }
+                        &.search-box-wrap {
+                            input[type="text"] {
+                                color: $text_color;
+                                @include placeholder(rgba($black, .5));
+                            }
+                        }
+                        &.my-wishlist {
+                            .my-wishlist-wrap {
+                                .haru-wishlist {
+                                    span.total {
+                                        background-color: $primary_color;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                        &.mini-cart-wrap {
+                            .widget_shopping_cart_content {
+                                .widget_shopping_cart_icon {
+                                    .total {
+                                        background-color: $primary_color;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // Logo (now use sticky logo)
+                    .header-logo {
+                        a {
+                            img {
+                                max-height: 35px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                @include box-sizing(content-box);
+                            }
+                            // Sticky Logo
+                            &.logo-default, 
+                            &.logo-retina {
+                                display: none;
+                            }
+                            &.logo-sticky {
+                                display: none;
+                            }
+                            &.logo-black {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            // Light all header elements
+            .haru-header-nav-wrap {
+                .header-navigation {
+                    .menu-wrap {
+                        .haru-main-menu {
+                            // Only apply option for level 1
+                            > li {
+                                &.current-menu-item {
+                                    > a {
+                                        color: $white;
+                                        &:before {
+                                            background-color: $white;
+                                        }
+                                    }
+                                }
+                                > a {
+                                    color: $white;
+                                    &:before {
+                                        // background-color: $white;
+                                    }
+                                }
+                                &:hover {
+                                    > a {
+                                        // color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-elements-item {
+                a.header-icon,
+                i.header-icon {
+                    color: $white;
+                    @include transition(all .3s);
+
+                    &:hover {
+                        color: $primary_color;
+                        @include transition(all .3s);
+                    }
+                }
+            }
+        }
+    }
+    // Header at the bottom of Slideshow
+    &.header-under-slideshow {
+        border-bottom: 1px solid $border_color;
+        position: absolute!important;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 100%;
+        // @TODO: header under slideshow sticky
+    }
+
+    // Sticky Header
+    &.header-sticky {
+        // Sticky Dark Skin
+        &.sticky_dark {
+            .haru-header-nav-wrap {
+                background-color: #333;
+                .header-navigation {
+                    .menu-wrap {
+                        .haru-main-menu {
+                            > li {
+                                &.current-menu-item {
+                                    > a {
+                                        color: $primary_color;
+                                    }
+                                }
+                                > a {
+                                    color: $white;
+                                    &:hover {
+                                        color: $primary_color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #popup-menu-button {
+                background-color: $white;
+                &:hover,
+                &:active {
+                    background-color: $primary_color;
+                }
+            }
+            .header-elements-item {
+                a.header-icon,
+                i.header-icon {
+                    color: $white;
+                    @include transition(all .3s);
+
+                    &:hover {
+                        color: $primary_color;
+                        @include transition(all .3s);
+                    }
+                }
+            }
+        }
+        // Sticky Light Skin
+        &.sticky_light {
+            .haru-header-nav-wrap {
+                background-color: $white;
+                .header-navigation {
+                    .menu-wrap {
+                        .haru-main-menu {
+                            > li {
+                                &.current-menu-item {
+                                    > a {
+                                        color: $primary_color;
+                                        &:before {
+                                            // background-color: $primary_color;
+                                        }
+                                    }
+                                }
+                                > a {
+                                    color: $text_color;
+                                    &:hover {
+                                        color: $primary_color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-elements-item {
+                a.header-icon,
+                i.header-icon {
+                    color: $text_color;
+                    @include transition(all .3s);
+
+                    &:hover {
+                        color: $primary_color;
+                        @include transition(all .3s);
+                    }
+                }
+                &.search-box-wrap {
+                    input[type="text"] {
+                        color: $text_color;
+                        @include placeholder(rgba($black, .5));
+                    }
+                }
+                &.my-wishlist {
+                    .my-wishlist-wrap {
+                        .haru-wishlist {
+                            span.total {
+                                background-color: $primary_color;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &.mini-cart-wrap {
+                    .widget_shopping_cart_content {
+                        .widget_shopping_cart_icon {
+                            .total {
+                                background-color: $primary_color;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Sticky Logo
+        &.sticky {
+            .header-logo {
+                &.has-logo-sticky {
+                    a { // Other Logo
+                        display: none;
+                    }
+                    .logo-sticky {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    // Process Sticky Header Nav
+    .haru-header-nav-wrap {
+        &.nav-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            @include transition(all .5s);
+            @include box-shadow(0 1px 10px 0 rgba(0, 0, 0, 0.2));
+            .header-nav-above {
+                height: 60px;
+            }
+            // Sticky general
+            .menu-wrap {
+                .haru-main-menu {
+                    > li {
+                        &.current-menu-item {
+                            > a {
+                                &:before {
+                                    // top: 40px;
+                                }
+                            }
+                        }
+                        > a {
+                            // padding: 0 20px!important;
+                            line-height: 60px!important;
+                            height: 60px;
+                            &:before {
+                                // top: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-logo {
+                a {
+                    img {
+                        max-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Mobile Header
+.haru-mobile-header {
+    position: relative;
+    z-index: 1000;
+
+    // Process Sticky Header Nav
+    .haru-mobile-header-wrap {
+        &.nav-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    &.header-mobile-sticky {
+
+    }
+
+    &.headroom--pinned:not(.headroom--top) { // @TODO: header under slideshow
+        position: fixed!important;
+        right: 0;
+        left: 0;
+        top: 0;
+        // height: 60px;
+        @include transition(all .3s);
+        .header-mobile-above {
+            height: 0;
+            visibility: hidden;
+        }
+    }
+
+    &.headroom--unpinned {
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        top: -100%;
+        // @include transition(all .3s);
+        .header-mobile-above {
+            height: 0;
+            visibility: hidden;
+        }
+        &.header--fixed {
+            top: 0;
+        }
+    }
+
+    &.headroom--unpinned.headroom--not-top {
+        // opacity: 0;
+        // height: 0;
+        // visibility: hidden;
+        @include transition(all 0s!important);
+    }
+
+    &.sticky-menu {
+        position: fixed!important;
+        width: 100%;
+        background-color: $white;
+        @include box-shadow(0 1px 10px 0 rgba(0, 0, 0, 0.2));
+        @include transition(all .3s);
+    }
+}

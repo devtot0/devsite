@@ -1,0 +1,74 @@
+/* Text Label Shortcode CSS */
+.text-label-shortcode-wrap {
+    // Style 1
+    &.style_1 {
+        .text-label-content {
+            position: relative;
+            margin-bottom: 30px;
+            
+            .text-label-top {
+                display: flex;
+            }
+
+            .label-title {
+                color: $heading_color;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 1;
+                @media screen and (max-width: $screen-md-max) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    font-size: 15px;
+                }
+            }
+            .label-sub-title {
+                font-size: 100px;
+                font-weight: $font-weight-bold;
+                text-transform: uppercase;
+                color: $heading_color;
+                line-height: 1;
+                text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+                @media screen and (max-width: $screen-md-max) {
+                    font-size: 70px;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    font-size: 50px;
+                }
+            }
+            .label-description {
+                color: $primary_color;
+                font-size: 150px;
+                margin: -10px 0 0 10px;
+                line-height: 1;
+                font-weight: $font-weight-bold;
+                font-style: italic;
+                text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+                @media screen and (max-width: $screen-md-max) {
+                    font-size: 100px;
+                    margin: -5px 0 5px 10px;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    font-size: 75px;
+                    margin: -5px 0 15px 10px;
+                }
+            }
+            .label-sub-description {
+                font-size: 100px;
+                font-weight: $font-weight-bold;
+                text-transform: uppercase;
+                text-align: center;
+                color: $heading_color;
+                margin-top: -20px;
+                line-height: 1;
+                text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+                @media screen and (max-width: $screen-md-max) {
+                    font-size: 70px;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}

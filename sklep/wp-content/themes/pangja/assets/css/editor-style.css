@@ -1,0 +1,101 @@
+/*!
+Haru Pangja Editor Styles
+*/
+body {
+  color: #3f3f3f !important;
+  line-height: 1.8 !important;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3f3f3f;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+a:hover {
+  color: #006ad0;
+  text-decoration: none;
+}
+
+a:active {
+  color: #006ad0;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #006ad0;
+  outline: none;
+  text-decoration: none;
+}
+
+.editor-post-title__block .editor-post-title__input {
+  font-family: "Poppins";
+  color: #3f3f3f;
+  font-size: 34px;
+  margin-top: 0;
+}
+
+blockquote {
+  border-left: none;
+  font-size: 16px;
+  font-style: italic;
+  margin: 3% 5%;
+  font-family: "Poppins";
+}
+
+blockquote p {
+  color: #3f3f3f;
+  font-size: 16px;
+}
+
+blockquote .wp-block-quote__citation {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.wp-block-pullquote {
+  color: #3f3f3f;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+  font-style: italic;
+  text-transform: none;
+  font-size: 16px;
+}

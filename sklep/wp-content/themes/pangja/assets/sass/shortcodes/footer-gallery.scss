@@ -1,0 +1,72 @@
+.footer-gallery-shortcode-wrap {
+    // Style 1
+    &.style_1 {
+        .footer-gallery-content {
+            padding-top: 5px;
+            .image-list {
+                list-style: none;
+                list-style-type: none;
+                padding: 0;
+                margin-left: -10px;;
+                margin-right: -10px;
+                li {
+                    float: left;
+                    overflow: hidden;
+                    opacity: 1;
+                    padding: 10px;
+                    position: relative;
+                    @include transition(all .3s);
+                    &:hover {
+                        a {
+                            border: 1px solid $primary_color;
+                            @include transition(all .3s);
+                        }
+                        img {
+                            opacity: 1;
+                            @include transition(all .3s);
+                        }
+                    }
+                    a {
+                        background-color: #434343;
+                        border: 1px solid #434343;
+                        display: block;
+                        padding: 15px;
+                        position: relative;
+                        z-index: 2;
+                        @include transition(all .3s);
+                    }
+                    img {
+                        width: 100%;
+                        position: relative;
+                        opacity: .5;
+                        @include transition(all .3s);
+                    }
+                }
+                // Columns 2
+                &.columns-2 {
+                    li {
+                        width: 50%;
+                    }
+                }
+                // Columns 3
+                &.columns-3 {
+                    li {
+                        width: 33.333333%;
+                    }
+                }
+                // Columns 4
+                &.columns-4 {
+                    li {
+                        width: 25%;
+                    }
+                }
+                // Columns 5
+                &.columns-5 {
+                    li {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+} 

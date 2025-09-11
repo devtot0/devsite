@@ -1,0 +1,190 @@
+// Popup Menu
+#popup-menu-button {
+    display: inline-block;
+    background-color: $text_color;
+    background-repeat: no-repeat;
+    -webkit-mask-image: url(../pangja/assets/images/navicon.svg);
+    mask-image: url(../pangja/assets/images/navicon.svg);
+    background-size: cover;
+    width: 21px;
+    height: 15px;
+    @include transition(all .3s);
+    &:hover,
+    &:active {
+        background-color: $primary_color;
+        @include transition(all .3s);
+    }
+}
+$mobile_menu_background: #000;
+
+// Menu popup background
+.mfp-bg {
+    &.menu-popup-bg {
+        background: $black;
+        opacity: 1!important;
+    }
+}
+
+// Menu popup content
+.menu-popup-bg {
+    .mfp-content {
+        height: 100%;
+    }
+}
+
+#haru-menu-popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .menu-wrapper {
+        display: block;
+        clear: both;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        .haru-nav-popup-menu {
+            padding: 0;
+            text-align: center;
+            li.menu-item {
+                font-size: 14px;
+                color: $white;
+                letter-spacing: 0.5px;
+                position: relative;
+                @include transition(all .2s ease-in-out);
+                > a {
+                    padding: 15px;
+                    display: inline-block;
+                    color: $white;
+                    line-height: 1.2;
+                    font-size: 24px;
+                    font-weight: 500;
+                    // text-transform: uppercase;
+                    @include transition(all .2s ease-in-out);
+                    &:hover {
+                        color: $text_color;
+                        @include transition(all .2s ease-in-out);
+                    }
+                }
+                > b.menu-caret {
+                    color: $white;
+                    float: right;
+                    font-size: 21px;
+                    font-weight: 400;
+                    right: -30px;
+                    position: absolute;
+                    top: 8px;
+                    @include transition(all .3s ease-in-out);
+                    &:before {
+                        content: "\f273";
+                        display: inline-block;
+                        font-family: Ionicons;
+                        text-align: center;
+                        width: 45px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        color: $text_color;
+                    }
+                    &.active {
+                        &:before {
+                            content: "\f368";
+                            display: inline-block;
+                            font-family: Ionicons;
+                        }
+                    }
+                }
+                &:not(.sub-menu-open):hover {
+                    
+                }
+                &.sub-menu-open {
+                    border-bottom-width: 0px;
+                    > ul.sub-menu:before {
+                        
+                    }
+                }
+            }
+            li.current-menu-ancestor > a,
+            li.current-menu-parent > a,
+            li.current-menu-item > a,
+            li.menu-current > a,
+            li > a:hover,
+            li:hover > a,
+            li ul.sub-menu li:hover > a {
+                color: $text_color;
+                > b.caret:before {
+                    color: $text_color;
+                }
+            }
+            
+            // Sub Menu Level 1
+            ul.sub-menu {
+                background-color: lighten($mobile_menu_background, 10%);
+                padding-left: 0;
+                position: relative;
+                > li.menu-item {
+                    > a {
+                        font-size: 16px;
+                    }
+                }
+                > li.menu-item.sub-menu-open > ul.sub-menu:before {
+                    
+                }
+                // Sub Menu Level 2
+                ul.sub-menu {
+                    > li.menu-item.sub-menu-open > ul.sub-menu:before {
+                        
+                    }
+                    // Sub Menu Level 3
+                    ul.sub-menu {
+                        
+                        > li.menu-item.sub-menu-open > ul.sub-menu:before {
+                            
+                        }
+                        // Sub Menu Level 4
+                        ul.sub-menu {
+                            > li.menu-item.sub-menu-open > ul.sub-menu:before {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // General
+        .haru-nav-popup-menu {
+            li {
+                list-style: none;
+                list-style-type: none;
+                > ul.sub-menu {
+                    position: relative;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: none;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    
+    .mfp-close {
+        color: $text_color;
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        opacity: 1;
+        @include transition(all .3s);
+        &:hover {
+            color: $white;
+            @include transition(all .3s);
+        }
+    }
+}
+// Popup Menu Transition
+body {
+    &.disable-transition {
+        @include transition(all 0s);
+    }
+}
