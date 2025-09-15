@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template Podstrony - Instalprint</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Template prostej podstrony Instalprint">
+    
+    <!-- Fonty Google -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/flexslider.js"></script>
+    
+    <style>
+        /* Dodatkowe style dla template */
+        .template-content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .template-section {
+            margin: 40px 0;
+            padding: 30px 0;
+        }
+        
+        .template-text {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #666;
+            margin: 20px 0;
+        }
+        
+        .template-text p2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3FA1BF;
+            display: block;
+            margin: 15px 0 10px 0;
+        }
+        
+        .template-text p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        
+        .cta-section {
+            background: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .cta-button {
+            background: #3FA1BF;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #2d7a8f;
+            color: white;
+        }
+        
+        .simple-slider {
+            margin: 30px 0;
+        }
+        
+        .simple-slider img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="navigation">
+        <div>
+            <ul class="topMenus">
+                <li><div id="logo"></div></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="index.php#portfolio">REALIZACJE</a></li>
+                <li><a href="index.php#services">OFERTA</a></li>
+                <li><a href="index.php#about">O NAS</a></li>
+                <li><a href="index.php#contact">KONTAKT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End: Navigation -->
+
+    <!-- Header z tytułem -->
+    <div id="header">
+        <div class="content">
+            <div id="intro">
+                <div id="welcome_text">TUTAJ WPISZ TYTUŁ STRONY</div>
+                <h1>Tutaj wpisz podtytuł lub krótki opis</h1>
+            </div>
+            
+            <!-- Prosty slider -->
+            <div class="simple-slider">
+                <div id="slider">
+                    <ul class="slides">
+                        <li><img src="images/slide1.jpg" alt="Slide 1" /></li>
+                        <li><img src="images/slide2.jpg" alt="Slide 2" /></li>
+                        <li><img src="images/slide3.jpg" alt="Slide 3" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Header -->
+
+    <!-- Główna zawartość -->
+    <div class="template-content">
+        
+        <!-- Sekcja z tekstem -->
+        <div class="template-section">
+            <div class="template-text">
+                <p2>Nagłówek sekcji</p2>
+                <p>To jest przykładowy tekst w sekcji. Możesz tutaj umieścić dowolny tekst opisujący usługę lub produkt. Tekst jest sformatowany zgodnie ze stylem strony głównej.</p>
+                
+                <p2>Kolejny nagłówek</p2>
+                <p>Kolejny akapit tekstu. Możesz dodawać dowolną ilość akapitów i nagłówków p2. Wszystko będzie automatycznie stylizowane.</p>
+                
+                <p>Zwykły akapit bez nagłówka p2. Idealny do dodatkowych informacji lub szczegółów.</p>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h3>Skontaktuj się z nami!</h3>
+            <p>Masz pytania? Chcesz złożyć zamówienie? Jesteśmy do Twojej dyspozycji.</p>
+            <a href="index.php#contact" class="cta-button">Kontakt</a>
+            <a href="tel:+48601639300" class="cta-button">Zadzwoń</a>
+        </div>
+        
+        <!-- Dodatkowa sekcja -->
+        <div class="template-section">
+            <div class="template-text">
+                <p2>Dodatkowe informacje</p2>
+                <p>Tutaj możesz umieścić dodatkowe informacje, listę usług, cennik lub inne ważne dane dla użytkowników.</p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End: Główna zawartość -->
+
+    <!-- Footer -->
+    <div style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>Copyright 2008-2024 by Instalprint | Wszystkie prawa zastrzeżone</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Prosty slider
+            $('#slider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                slideshowSpeed: 4000,
+                animationDuration: 600,
+                directionNav: true,
+                controlNav: false,
+                keyboardNav: true,
+                mousewheel: false,
+                pauseOnHover: true,
+                animationLoop: true
+            });
+            
+            // Smooth scroll dla linków nawigacyjnych
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 100
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

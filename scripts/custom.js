@@ -67,7 +67,8 @@ $(window).load(function(){
      });
      */
 
-     //Load services
+     //Load services - DISABLED - now using direct links to HTML pages
+     /*
      $('a.read_more').click(function(){
                var source = $(this).attr('href');
                $('div#service_item').append('<div class="loading"></div>');
@@ -89,6 +90,7 @@ $(window).load(function(){
 
      return false;
      });
+     */
      
      //Animate testimonials
      $('#testimonials').cycle({ fx: 'fade', slideResize: 0, timeout: 10000, before: function(){ var $ht = $(this).height(); $(this).parent().animate({height: $ht}); } });

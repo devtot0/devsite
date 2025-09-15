@@ -81,8 +81,8 @@ $(document).ready(function () {
 <!-- Navigation -->
 
 <div id="navigation">
-	
-     <div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+     <div id="nav-menu">
           <ul class="topMenus">
               <li><div id="logo"></div></li>
               <li class="topMenuActive"><a href="#header">HOME</a></li>
@@ -938,7 +938,7 @@ $(document).ready(function () {
                        <p>
 						Potrzebują Państwo reklamy dużego formatu? Żaden kaliber i żaden wymiar pracy, nie jest wstanie nas przestraszyć. Wykonujemy zlecenia na wydruk wielkoformatowy. 
                        </p>
-                       <a href="druk_wielkoformatowy.htm" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/druk-wielkoformatowy.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
 
@@ -954,7 +954,7 @@ $(document).ready(function () {
                        <p>
                        Drukarnie cyfrowe to jeden z elementów naszych czasów. My oferujemy Państwu najwyższej klasy wydruk cyfrowy.  
                        </p>
-                       <a href="druk_cyfrowy.htm" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/druk-cyfrowy-offsetowy.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -971,7 +971,7 @@ $(document).ready(function () {
                        Prace montażowe i zakresu aplikacji drukowanych reklam wykonujemy na terenie całej Polski. 
 						Dysponujemy doświadczoną ekipą alpinistów i wyklejaczy, dla których praca jest pasją i wyzwaniem, dla których nie ma niemożliwych do zrealizowania montaży. 
                        </p>
-                       <a href="montaz.htm" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/montaz.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -987,7 +987,7 @@ $(document).ready(function () {
                        <p>
                        Roll-upy to jedna z form reklamy wewnętrznej, często spotykana na różnego rodzaju wystawach i targach. Rozłożenie stojaka to czynność bardzo prosta i szybka, a złożony roll-up jest lekki i zajmuje niewiele miejsca. 
                        </p>
-                       <a href="stojaki_wystawiennicze.htm" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/stojaki-wystawiennicze.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1004,7 +1004,7 @@ $(document).ready(function () {
                        <p>
                        Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić do dla waszej firmy. 
                        </p>
-                       <a href="aplikacje_na_pojazdach.htm" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/aplikacje-na-pojazdach.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1020,7 +1020,7 @@ $(document).ready(function () {
                        <p>
                        Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie. 
                        </p>
-                       <a href="reklama_swietlna.htm" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/reklama-swietlna.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
 
@@ -1209,6 +1209,27 @@ Wszystkie prawa zastrzeżone, kopiowanie zdjęć, całości lub części serwisu
 
 </div>
 <!-- End: Contact -->
+
+<script type="text/javascript">
+// Mobile menu toggle
+$(document).ready(function() {
+    $('#mobile-menu-toggle').click(function() {
+        $('#nav-menu').toggleClass('active');
+    });
+    
+    // Close mobile menu when clicking on a link
+    $('.topMenus a').click(function() {
+        $('#nav-menu').removeClass('active');
+    });
+    
+    // Close mobile menu when clicking outside
+    $(document).click(function(e) {
+        if (!$(e.target).closest('#navigation').length) {
+            $('#nav-menu').removeClass('active');
+        }
+    });
+});
+</script>
 
 </body>
 

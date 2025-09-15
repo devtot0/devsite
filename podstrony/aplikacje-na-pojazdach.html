@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikacje na pojazdach - Instalprint</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oklejanie samochodów Wrocław - Instalprint">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+    <script type="text/javascript" src="../scripts/flexslider.js"></script>
+    <style>
+        .template-content { max-width: 960px; margin: 0 auto; padding: 20px; }
+        .template-section { margin: 40px 0; padding: 30px 0; }
+        .template-text { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #666; margin: 20px 0; }
+        .template-text p2 { font-size: 18px; font-weight: bold; color: #3FA1BF; display: block; margin: 15px 0 10px 0; }
+        .template-text p { font-size: 14px; margin: 10px 0; }
+        .cta-section { background: #f8f9fa; padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; }
+        .cta-button { background: #3FA1BF; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px; transition: background 0.3s; }
+        .cta-button:hover { background: #2d7a8f; color: white; }
+        .simple-slider { margin: 30px 0; }
+        .simple-slider img { width: 100%; height: auto; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+        <div id="nav-menu">
+            <ul class="topMenus">
+                <li><div id="logo"></div></li>
+                <li><a href="../index.php">HOME</a></li>
+                <li><a href="../index.php#portfolio">REALIZACJE</a></li>
+                <li><a href="../index.php#services">OFERTA</a></li>
+                <li><a href="../index.php#about">O NAS</a></li>
+                <li><a href="../index.php#contact">KONTAKT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="header">
+        <div class="content">
+            <div id="intro">
+                <div id="welcome_text">Aplikacje na pojazdach</div>
+                <h1>Oklejanie samochodów i floty pojazdów</h1>
+            </div>
+            <div class="simple-slider">
+                <div id="slider">
+                    <ul class="slides">
+                        <li><img src="../images/slide2.jpg" alt="Aplikacje - przykład 1" /></li>
+                        <li><img src="../images/slide5.jpg" alt="Aplikacje - przykład 2" /></li>
+                        <li><img src="../images/slide1.jpg" alt="Aplikacje - przykład 3" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="template-content">
+        <div class="template-section">
+            <div class="template-text">
+                <p2>Opis usługi</p2>
+                <p>Każdy pojazd może być skutecznym nośnikiem reklamowym, jeśli odpowiednio go do tego przystosujemy. Oklejanie samochodów zwiększa świadomość marki i przyciąga uwagę.</p>
+                <p><strong>Najczęściej stosowane folie:</strong> monomeryczne średniookresowe, polimerowe, wylewane. Wybór folii zależy od powierzchni, okresu ekspozycji oraz budżetu.</p>
+                <p>Posiadamy doświadczenie w prowadzeniu kampanii w wielu lokalizacjach jednocześnie. Zapewniamy doradztwo w doborze materiałów i estetyczne projekty graficzne.</p>
+                <p><img src="../images/oferta/aplikacje_na_pojazdach.jpg" alt="Aplikacje na pojazdach" style="width:100%;" /></p>
+            </div>
+        </div>
+        <div class="cta-section">
+            <h3>Skontaktuj się z nami!</h3>
+            <p>Masz pytania? Chcesz złożyć zamówienie? Jesteśmy do Twojej dyspozycji.</p>
+            <a href="../index.php#contact" class="cta-button">Kontakt</a>
+            <a href="tel:+48601639300" class="cta-button">Zadzwoń</a>
+        </div>
+    </div>
+    <div style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>Copyright 2008-2024 by Instalprint | Wszystkie prawa zastrzeżone</p>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#slider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                slideshowSpeed: 4000,
+                animationDuration: 600,
+                directionNav: true,
+                controlNav: false,
+                keyboardNav: true,
+                mousewheel: false,
+                pauseOnHover: true,
+                animationLoop: true
+            });
+            
+            // Mobile menu toggle
+            $('#mobile-menu-toggle').click(function() {
+                $('#nav-menu').toggleClass('active');
+            });
+            
+            // Close mobile menu when clicking on a link
+            $('.topMenus a').click(function() {
+                $('#nav-menu').removeClass('active');
+            });
+            
+            // Close mobile menu when clicking outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('#navigation').length) {
+                    $('#nav-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

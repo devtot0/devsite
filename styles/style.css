@@ -103,6 +103,86 @@ div#navigation div ul li:hover { background: #FFF; }
 div#navigation .topMenuActive{ background: #FFF; }
 div#navigation .topMenuActive a{ color:#000; }
 div#navigation div ul li:hover a, div#navigation div ul li a:hover { color: #000; }
+
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100007;
+}
+
+.mobile-menu-toggle:hover {
+    color: #3FA1BF;
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    div#navigation div {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: rgba(63, 161, 191, 0.95);
+        padding: 20px 0;
+    }
+    
+    div#navigation div.active {
+        display: block;
+    }
+    
+    div#navigation div ul {
+        position: static;
+        float: none;
+        left: 0;
+        width: 100%;
+    }
+    
+    div#navigation div ul li {
+        float: none;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    div#navigation div ul li:last-child {
+        border-bottom: none;
+    }
+    
+    div#navigation div ul li a {
+        padding: 15px 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    div#navigation div ul li:hover {
+        background: rgba(255,255,255,0.1);
+    }
+    
+    div#navigation div ul li:hover a {
+        color: #FFF;
+    }
+    
+    div#navigation .topMenuActive {
+        background: rgba(255,255,255,0.2);
+    }
+    
+    div#navigation .topMenuActive a {
+        color: #FFF;
+    }
+}
+
 select.mobile_menu { display: none; }
 
 /*--- 2. Logo --*/
