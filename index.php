@@ -934,7 +934,7 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3>Druk wielkoformatowy</h3>
+                       <h3><a href="podstrony/druk-wielkoformatowy.html" class="landing_page">Druk wielkoformatowy</a></h3>
                        <p>
 						Potrzebują Państwo reklamy dużego formatu? Żaden kaliber i żaden wymiar pracy, nie jest wstanie nas przestraszyć. Wykonujemy zlecenia na wydruk wielkoformatowy. 
                        </p>
@@ -950,7 +950,7 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3>Druk cyfrowy - offsetowy</h3>
+                       <h3><a href="podstrony/druk-cyfrowy-offsetowy.html" class="landing_page">Druk cyfrowy - offsetowy</a></h3>
                        <p>
                        Drukarnie cyfrowe to jeden z elementów naszych czasów. My oferujemy Państwu najwyższej klasy wydruk cyfrowy.  
                        </p>
@@ -966,7 +966,7 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3>Montaż</h3>
+                       <h3><a href="podstrony/montaz.html" class="landing_page">Montaż</a></h3>
                        <p>
                        Prace montażowe i zakresu aplikacji drukowanych reklam wykonujemy na terenie całej Polski. 
 						Dysponujemy doświadczoną ekipą alpinistów i wyklejaczy, dla których praca jest pasją i wyzwaniem, dla których nie ma niemożliwych do zrealizowania montaży. 
@@ -983,7 +983,7 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3>Stojaki wystawiennicze</h3>
+                       <h3><a href="podstrony/stojaki-wystawiennicze.html" class="landing_page">Stojaki wystawiennicze</a></h3>
                        <p>
                        Roll-upy to jedna z form reklamy wewnętrznej, często spotykana na różnego rodzaju wystawach i targach. Rozłożenie stojaka to czynność bardzo prosta i szybka, a złożony roll-up jest lekki i zajmuje niewiele miejsca. 
                        </p>
@@ -1000,7 +1000,7 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3>Aplikacje na pojazdach</h3>
+                       <h3><a href="podstrony/aplikacje-na-pojazdach.html" class="landing_page">Aplikacje na pojazdach</a></h3>
                        <p>
                        Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić do dla waszej firmy. 
                        </p>
@@ -1016,7 +1016,7 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3>Reklama świetlna</h3>
+                       <h3><a href="podstrony/reklama-swietlna.html" class="landing_page">Reklama świetlna</a></h3>
                        <p>
                        Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie. 
                        </p>
