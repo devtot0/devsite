@@ -1,6 +1,14 @@
 /*=====================================================================================*/
 /*       1. RESET CSS                                                                  */
 /*=====================================================================================*/
+@media (max-width: 480px) {
+    #welcome_text {
+      font-size: 28px;
+    }
+    div#intro h1 {
+      font-size: 16px;
+    }
+  }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -189,9 +197,25 @@ select.mobile_menu { display: none; }
 div#logo { margin-bottom: 60px; text-align: center; }
 
 /*-- 3. Intro --*/
-div#intro { margin-bottom: 20px; text-align: center; }
-div#intro h1 { margin-bottom: 10px; font-size: 20px; font-family: 'Oswald', sans-serif; font-weight: bold; color: #3ea1bd; text-align: center }
-#welcome_text { margin-bottom: 22px; font-size: 50px; font-family: 'Oswald', sans-serif; font-weight: bold; color: #3ea1bd; }
+div#intro { margin-bottom: 20px; margin-top: 20px; text-align: center; }
+
+div#intro h1 {
+    margin-bottom: 10px;
+    font-size: clamp(16px, 4vw, 20px); /* responsywne dopasowanie */
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #3ea1bd;
+    text-align: center;
+    padding: 0 10px; /* zapobiega przycinaniu tekstu */
+    line-height: 1.3em; /* poprawa czytelności */
+  }
+  #welcome_text {
+    margin-bottom: 22px;
+    font-size: clamp(24px, 6vw, 50px);
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #3ea1bd;
+  }
 div#intro p { line-height: 28px; font-family: 'Open Sans', sans-serif; font-size: 18px; color: #666; }
 div#intro p strong { color: #000; }
 
