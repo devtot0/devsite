@@ -13,15 +13,113 @@
     <script type="text/javascript" src="../scripts/flexslider.js"></script>
     <style>
         .template-content { max-width: 960px; margin: 0 auto; padding: 20px; }
-        .template-section { margin: 40px 0; padding: 30px 0; }
+        .template-section { margin: 40px 0; }
         .template-text { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #666; margin: 20px 0; }
         .template-text p2 { font-size: 18px; font-weight: bold; color: #3FA1BF; display: block; margin: 15px 0 10px 0; }
         .template-text p { font-size: 14px; margin: 10px 0; }
+        .template-text h2 { 
+            font-family: 'Oswald', sans-serif; 
+            font-size: 22px; 
+            color: #333; 
+            margin: 30px 0 15px 0; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid #3FA1BF; 
+        }
+        .template-text ul { 
+            margin: 15px 0; 
+            padding-left: 20px; 
+        }
+        .template-text li { 
+            margin: 8px 0; 
+            font-size: 14px; 
+            line-height: 1.5; 
+        }
+        
+        /* Gallery Styles */
+        .portfolio-gallery { 
+            margin: 20px 0 40px 0; 
+            padding: 20px 0; 
+        }
+        .gallery-title { 
+            text-align: center; 
+            font-family: 'Oswald', sans-serif; 
+            font-size: 24px; 
+            color: #333; 
+            margin-bottom: 30px; 
+        }
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        .gallery-item { 
+            position: relative; 
+            overflow: hidden; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .gallery-item:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+        }
+        .gallery-item img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            display: block; 
+        }
+        .gallery-item .overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+            background: rgba(63, 161, 191, 0.8); 
+            color: white; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 14px; 
+            font-weight: bold; 
+        }
+        .gallery-item:hover .overlay { 
+            opacity: 1; 
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .gallery-grid { 
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+                gap: 15px; 
+                padding: 0 15px; 
+            }
+            .gallery-item img { 
+                height: 150px; 
+            }
+            .gallery-title { 
+                font-size: 20px; 
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-grid { 
+                grid-template-columns: 1fr; 
+                gap: 10px; 
+            }
+            .gallery-item img { 
+                height: 180px; 
+            }
+        }
         .cta-section { background: #f8f9fa; padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; }
         .cta-button { background: #3FA1BF; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px; transition: background 0.3s; }
         .cta-button:hover { background: #2d7a8f; color: white; }
-        .simple-slider { margin: 30px 0; }
-        .simple-slider img { width: 100%; height: auto; border-radius: 8px; }
     </style>
 </head>
 <body>
@@ -44,26 +142,66 @@
                 <div id="welcome_text">Druk cyfrowy - offsetowy</div>
                 <h1>Szybko, elastycznie i w najwyższej jakości</h1>
             </div>
-            <div class="simple-slider">
-                <div id="slider">
-                    <ul class="slides">
-                        <li><img src="../images/slide2.jpg" alt="Druk cyfrowy - przykład 1" /></li>
-                        <li><img src="../images/slide3.jpg" alt="Druk cyfrowy - przykład 2" /></li>
-                        <li><img src="../images/slide1.jpg" alt="Druk cyfrowy - przykład 3" /></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
+    
+    <!-- Portfolio Gallery Section -->
+                <p><img src="../images/oferta/druk_cyfrowy_offsetowy.jpg" alt="Druk cyfrowy - offsetowy" style="width:100%;" /></p>
+
     <div class="template-content">
         <div class="template-section">
             <div class="template-text">
-                <p2>Opis usługi</p2>
-                <p>Druk cyfrowy pozwala na realizację nawet niewielkich liczb kopii. Oferujemy Państwu najwyższej klasy wydruk cyfrowy. Co nas wyróżnia? Nowoczesny sprzęt, kompetentna kadra pracowników.</p>
-                <p>W chwili obecnej możemy pochwalić się realizacją dziesiątek projektów, o różnych stopniu trudności. Zawsze działamy według zasad, że jakość pracy jest najlepszą marką firmy.</p>
-                <p>Druk cyfrowy jest opłacalny dla niewielkiego nakładu. Jeśli zależy Państwu na czasie i niewielkim nakładzie, polecamy tę formę wydruku. Prócz krótkiego czasu, nasze prace są wysokiej jakości.</p>
+                <h2>Szybkie i niskonakładowe wydruki cyfrowe</h2>
+                <p>Druk cyfrowy umożliwia realizację nawet niewielkich nakładów z najwyższą jakością. W naszej drukarni cyfrowej oferujemy profesjonalne projekty graficzne z <a href="https://foxmedia.com.pl/" target="_blank">foxmedia.com.pl</a> i wydruki cyfrowe dzięki nowoczesnemu sprzętowi i wykwalifikowanej kadrze.</p>
+                
+                <p>Od 2001 roku realizujemy dziesiątki projektów razem z <a href="https://foxmedia.com.pl/" target="_blank">foxmedia.com.pl</a> o różnym stopniu trudności, zawsze stawiając na najwyższą jakość – to nasza najlepsza wizytówka.</p>
+                
+                <p>Druk cyfrowy jest idealny dla niskich nakładów i szybkiej realizacji. Jeśli zależy Państwu na czasie lub zamawiacie niewielką liczbę kopii, jest to najbardziej opłacalne rozwiązanie. Szczególnie klienci z Wrocławia i okolic doceniają naszą ofertę – łączymy szybkość realizacji z najwyższą jakością, dbając o każdy detal.</p>
+                
+                <p>Zapraszamy do kontaktu i współpracy, również przy małych i specyficznych zamówieniach.</p>
+
+                <h2>Cyfrowa drukarnia niskonakładowa – wydruki już od 1 sztuki</h2>
+                <p>W naszej drukarni <a href="https://www.instalprint.pl/" target="_blank">instalprint.pl</a> cyfrowej można zamówić druk niskonakładowy od jednej sztuki. Drukujemy małe ilości zarówno w standardowych, jak i w dużych formatach. Druk cyfrowy sprawdza się przy realizacji popularnych produktów poligraficznych, takich jak:</p>
+                <ul>
+                    <li>wizytówki</li>
+                    <li>ulotki</li>
+                    <li>plakaty i broszury</li>
+                    <li>książki i pocztówki</li>
+                    <li>koperty i karty menu</li>
+                    <li>instrukcje, zaproszenia i dyplomy</li>
+                </ul>
+
+                <h2>Zalety druku cyfrowego</h2>
+                <ul>
+                    <li>szybka realizacja wydruków</li>
+                    <li>druk niskonakładowy opłacalny dla małych serii</li>
+                    <li>dowolne nakłady, np. 230 sztuk</li>
+                    <li>możliwość druku w nietypowych formatach</li>
+                    <li>personalizacja wydruków (nazwiska, numery, indywidualne treści)</li>
+                    <li>wysoka jakość full kolor CMYK</li>
+                </ul>
+
+                <h2>Jak działa druk cyfrowy?</h2>
+                <p>Druk cyfrowy w <a href="https://www.instalprint.pl/" target="_blank">instalprint.pl</a> umożliwia przesłanie pliku bezpośrednio z komputera do urządzenia drukującego – nie jest potrzebne przygotowanie matryc, klisz czy farb. Dzięki temu możemy oferować:</p>
+                <ul>
+                    <li>druk personalizowany (np. nazwiska na zaproszeniach, numery na biletach, korespondencja seryjna)</li>
+                    <li>druk ekologiczny (brak strat papieru na „rozjazd")</li>
+                    <li>tani druk niskonakładowy bez kosztownych przygotowań</li>
+                    <li>wysoką jakość i powtarzalność wydruków z możliwością uszlachetniania folią lub laminowaniem</li>
+                    <li>szybki czas realizacji</li>
+                    <li>kompleksowe projekty z <a href="https://foxmedia.com.pl/" target="_blank">foxmedia.com.pl</a></li>
+                </ul>
+
+                <h2>Ograniczenia druku cyfrowego</h2>
+                <p>Metoda cyfrowa nie sprawdza się przy bardzo dużych nakładach czy jednokolorowych szarych polach. W takich przypadkach lepsze są techniki offsetowe lub fleksograficzne. Druk cyfrowy wymaga też odpowiedniego nośnika – najczęściej papieru przystosowanego do druku laserowego.</p>
+
+                <h2>Drukarnia cyfrowa – personalizacja i wygoda online</h2>
+                <p>W naszej cyfrowej drukarni niskonakładowej możesz zamówić firmowe wydruki w wysokiej jakości i małych ilościach. Dzięki technologii cyfrowej możliwa jest pełna personalizacja – np. zaproszenia, kartki świąteczne, identyfikatory, dyplomy, ulotki.</p>
+                
+                <p>Nasze usługi w <a href="https://www.instalprint.pl/" target="_blank">instalprint.pl</a> dostępne 24h/dobę. Na stronie można poznać ofertę, przygotować projekt do druku, złożyć zamówienie, przesłać plik i dokonać płatności.</p>
+                
+                <p>Dla niestandardowych zamówień zachęcamy do kontaktu z naszym biurem obsługi klienta.</p>
+                
                 <p><a href="../cennik.pdf" target="_blank" class="cta-button">Cennik</a></p>
-                <p><img src="../images/oferta/druk_cyfrowy_offsetowy.jpg" alt="Druk cyfrowy - offsetowy" style="width:100%;" /></p>
             </div>
         </div>
         <div class="cta-section">
@@ -78,19 +216,6 @@
     </div>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#slider').flexslider({
-                animation: "slide",
-                slideshow: true,
-                slideshowSpeed: 4000,
-                animationDuration: 600,
-                directionNav: true,
-                controlNav: false,
-                keyboardNav: true,
-                mousewheel: false,
-                pauseOnHover: true,
-                animationLoop: true
-            });
-            
             // Mobile menu toggle
             $('#mobile-menu-toggle').click(function() {
                 $('#nav-menu').toggleClass('active');
