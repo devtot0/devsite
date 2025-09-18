@@ -95,7 +95,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 /*-- 1. Navigation --*/
 /* New Responsive Navbar */
 .navbar {
-    background-color: #2596be;
+    background: url(images/topbg.png) no-repeat center center, #2596be;
+    background-size: cover;
     width: 100%;
     position: fixed;
     top: 0;
