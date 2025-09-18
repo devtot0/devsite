@@ -87,7 +87,17 @@ $(document).ready(function () {
               <li><div id="logo"></div></li>
               <li class="topMenuActive"><a href="#header">HOME</a></li>
               <li><a href="#portfolio">REALIZACJE</a></li>
-              <li><a href="#services">OFERTA</a></li>
+              <li class="dropdown">
+                  <a href="#services">OFERTA</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="podstrony/druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
+                      <li><a href="podstrony/druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
+                      <li><a href="podstrony/stojaki-wystawiennicze.html">Stojaki wystawiennicze</a></li>
+                      <li><a href="podstrony/aplikacje-na-pojazdach.html">Aplikacje na pojazdach</a></li>
+                      <li><a href="podstrony/reklama-swietlna.html">Reklama świetlna</a></li>
+                      <li><a href="podstrony/montaz.html">Montaż</a></li>
+                  </ul>
+              </li>
               <li><a href="#about">O NAS</a></li>
               <li><a href="#contact">KONTAKT</a></li>
           </ul>
@@ -108,7 +118,7 @@ $(document).ready(function () {
          <!-- Intro -->
          <div id="intro">
 
-              <div id="welcome_text">WITAMY W INSTALPRINT!!</div>
+              <div id="welcome_text">WITAMY W INSTALPRINT!</div>
               <h1>Druk wielkoformatowy, oklejanie samochodów, druk cyfrowy, druk ulotek, kasetony, pylony, reklama, Wrocław</h1>  
  
 
@@ -898,7 +908,7 @@ $(document).ready(function () {
      <!-- Quote -->
      <div id="quote">
           <p>
-          "Jesteśmy profesjonalnie działającą firmą od 2008 roku."
+          Jesteśmy profesjonalnie działającą firmą od 2008 roku.
           </p>
           <span id="author"></span>
      </div>
@@ -1066,6 +1076,16 @@ $('document').ready(function(){
           Jesteśmy profesjonalnie działającą firmą od 2008 roku. Mimo, jak się może zdawać niewielkiego, bo kilku letniego doświadczenia, wciąż miło zaskakujemy swoich klientów kreatywnymi rozwiązaniami. Projektowanie reklam to nie tylko nasza pasja, ale całe życie. Nad Twoimi projektami pracuje sztab profesjonalistów, którzy nie boją się podjąć żadnego wyzwania. Cechuje nas indywidualne podejście do każdego naszego klienta, zdajemy sobie sprawę, że każdy z Państwa ma inne potrzeby. Jak nikt inny potrafimy słuchać potrzeb.
           </p>
 
+          <div style="margin-top: 30px; padding: 25px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3FA1BF;">
+              <h3 style="color: #3FA1BF; font-family: 'Oswald', sans-serif; font-size: 20px; margin-bottom: 15px;">Reklama świetlna Wrocław – kompleksowa oferta</h3>
+              <p style="margin-bottom: 15px; color: gray;">
+              W <a href="https://www.instalprint.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">instalprint.pl</a> tworzymy nowoczesne reklamy świetlne we Wrocławiu, łącząc estetykę, funkcjonalność i skuteczność marketingową. Nasze realizacje przyciągają uwagę, wzmacniają identyfikację wizualną i realnie zwiększają rozpoznawalność marek.
+              </p>
+              <p style="margin-bottom: 15px; color: gray;">
+              Obsługujemy zarówno lokalne firmy, jak i duże sieci ogólnopolskie, oferując pełną obsługę – od projektu graficznego w <a href="https://foxmedia.com.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">foxmedia.com.pl</a>, poprzez produkcję, aż po profesjonalny montaż reklamy.
+              </p>
+          </div>
+
      </div>
      
      <!-- Testimonials -->
@@ -1132,6 +1152,84 @@ $('document').ready(function(){
 
 </div>
 <!-- End: About -->
+
+<!-- Why Us Section -->
+<div id="why_us" style="background: #f8f9fa; padding: 60px 0;">
+    <div class="content">
+        <!-- Title -->
+        <div class="title" style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #333; font-family: 'Oswald', sans-serif; font-size: 28px; margin-bottom: 20px;">Dlaczego instalprint.pl – reklama świetlna Wrocław?</h2>
+        </div>
+        
+        <!-- Benefits Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Kompleksowa obsługa</div>
+                <p style="color: #666; margin: 0;">Od projektu graficznego w <a href="https://foxmedia.com.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">foxmedia.com.pl</a> po montaż</p>
+            </div>
+            
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Własna produkcja we Wrocławiu</div>
+                <p style="color: #666; margin: 0;">Kontrola jakości i krótkie terminy</p>
+            </div>
+            
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Nowoczesne technologie</div>
+                <p style="color: #666; margin: 0;">LED, CNC, trwałe materiały</p>
+            </div>
+            
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Doświadczenie</div>
+                <p style="color: #666; margin: 0;">Setki realizacji we Wrocławiu i całej Polsce</p>
+            </div>
+            
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Indywidualne podejście</div>
+                <p style="color: #666; margin: 0;">Każda reklama dopasowana do marki klienta</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div id="cta_section" style="background: #3FA1BF; padding: 60px 0; text-align: center;">
+    <div class="content">
+        <h2 style="color: white; font-family: 'Oswald', sans-serif; font-size: 28px; margin-bottom: 20px;">Skontaktuj się z instalprint.pl – Twoja reklama świetlna we Wrocławiu</h2>
+        <p style="color: white; font-size: 18px; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">Szukasz solidnej firmy od reklamy świetlnej Wrocław? Dobrze trafiłeś!</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 800px; margin: 0 auto; padding: 0 20px;">
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <div style="color: white; font-weight: bold; margin-bottom: 10px;">Doświadczenie i setki realizacji</div>
+                <p style="color: white; margin: 0; font-size: 14px;">w wielu branżach</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <div style="color: white; font-weight: bold; margin-bottom: 10px;">Najwyższa jakość</div>
+                <p style="color: white; margin: 0; font-size: 14px;">estetyka i trwałość</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <div style="color: white; font-weight: bold; margin-bottom: 10px;">Projekty indywidualnie dopasowane</div>
+                <p style="color: white; margin: 0; font-size: 14px;">do marki w <a href="https://foxmedia.com.pl/" target="_blank" style="color: white; text-decoration: underline;">foxmedia.com.pl</a></p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <div style="color: white; font-weight: bold; margin-bottom: 10px;">Montaż i wysyłka</div>
+                <p style="color: white; margin: 0; font-size: 14px;">na terenie całej Polski</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <div style="color: white; font-weight: bold; margin-bottom: 10px;">Krótkie terminy realizacji</div>
+                <p style="color: white; margin: 0; font-size: 14px;">bez kompromisów</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px;">
+            <a href="#contact" style="background: white; color: #3FA1BF; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px; transition: all 0.3s ease;">Skontaktuj się z nami</a>
+            <a href="tel:+48601639300" style="background: transparent; color: white; padding: 15px 30px; text-decoration: none; border: 2px solid white; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px; transition: all 0.3s ease;">Zadzwoń</a>
+        </div>
+    </div>
+</div>
 
 <!-- Contact -->
 <div id="contact">
@@ -1219,9 +1317,19 @@ $(document).ready(function() {
         $('#nav-menu').toggleClass('active');
     });
     
-    // Close mobile menu when clicking on a link
+    // Mobile dropdown toggle
+    $('.dropdown > a').click(function(e) {
+        if ($(window).width() <= 768) {
+            e.preventDefault();
+            $(this).parent().toggleClass('active');
+        }
+    });
+    
+    // Close mobile menu when clicking on a link (except dropdown)
     $('.topMenus a').click(function() {
-        $('#nav-menu').removeClass('active');
+        if (!$(this).parent().hasClass('dropdown')) {
+            $('#nav-menu').removeClass('active');
+        }
     });
     
     // Close mobile menu when clicking outside
