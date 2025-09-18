@@ -79,30 +79,52 @@ $(document).ready(function () {
 <body>
 
 <!-- Navigation -->
-
-<div id="navigation">
-    <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
-     <div id="nav-menu">
-          <ul class="topMenus">
-              <li><div id="logo"></div></li>
-              <li class="topMenuActive"><a href="#header">HOME</a></li>
-              <li><a href="#portfolio">REALIZACJE</a></li>
-              <li class="dropdown">
-                  <a href="#services">OFERTA</a>
-                  <ul class="dropdown-menu">
-                      <li><a href="podstrony/druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
-                      <li><a href="podstrony/druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
-                      <li><a href="podstrony/stojaki-wystawiennicze.html">Stojaki wystawiennicze</a></li>
-                      <li><a href="podstrony/aplikacje-na-pojazdach.html">Aplikacje na pojazdach</a></li>
-                      <li><a href="podstrony/reklama-swietlna.html">Reklama świetlna</a></li>
-                      <li><a href="podstrony/montaz.html">Montaż</a></li>
-                  </ul>
-              </li>
-              <li><a href="#about">O NAS</a></li>
-              <li><a href="#contact">KONTAKT</a></li>
-          </ul>
-     </div>
-</div>
+<nav class="navbar">
+    <div class="navbar-container">
+        <!-- Logo -->
+        <div class="navbar-logo">
+            <a href="#header">
+                <img src="images/logo.png" alt="INSTALPRINT" />
+            </a>
+        </div>
+        
+        <!-- Mobile menu toggle -->
+        <button class="navbar-toggle" id="navbar-toggle">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        
+        <!-- Navigation menu -->
+        <div class="navbar-menu" id="navbar-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#header" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">REALIZACJE</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">OFERTA</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="podstrony/druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
+                        <li><a href="podstrony/druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
+                        <li><a href="podstrony/stojaki-wystawiennicze.html">Stojaki wystawiennicze</a></li>
+                        <li><a href="podstrony/aplikacje-na-pojazdach.html">Aplikacje na pojazdach</a></li>
+                        <li><a href="podstrony/reklama-swietlna.html">Reklama świetlna</a></li>
+                        <li><a href="podstrony/montaz.html">Montaż</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">O NAS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">KONTAKT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <!-- End: Navigation -->
 
 <!-- Header -->
@@ -1311,31 +1333,187 @@ Wszystkie prawa zastrzeżone, kopiowanie zdjęć, całości lub części serwisu
 <!-- End: Contact -->
 
 <script type="text/javascript">
-// Mobile menu toggle
+// Polyfill for requestIdleCallback - more aggressive approach
+(function() {
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function(callback, options) {
+            var start = Date.now();
+            var timeout = options && options.timeout ? options.timeout : 0;
+            
+            return setTimeout(function() {
+                callback({
+                    didTimeout: timeout > 0 && (Date.now() - start) >= timeout,
+                    timeRemaining: function() {
+                        return Math.max(0, 50 - (Date.now() - start));
+                    }
+                });
+            }, 1);
+        };
+    }
+
+    if (!window.cancelIdleCallback) {
+        window.cancelIdleCallback = function(id) {
+            clearTimeout(id);
+        };
+    }
+    
+    // Also polyfill for any other objects that might call requestIdleCallback
+    if (typeof document !== 'undefined') {
+        var originalCreateElement = document.createElement;
+        document.createElement = function(tagName) {
+            var element = originalCreateElement.call(document, tagName);
+            if (!element.requestIdleCallback) {
+                element.requestIdleCallback = window.requestIdleCallback;
+            }
+            if (!element.cancelIdleCallback) {
+                element.cancelIdleCallback = window.cancelIdleCallback;
+            }
+            return element;
+        };
+    }
+})();
+
+// Additional polyfill for jQuery elements
 $(document).ready(function() {
-    $('#mobile-menu-toggle').click(function() {
-        $('#nav-menu').toggleClass('active');
+    // Override jQuery's addClass/removeClass to include polyfill
+    var originalAddClass = $.fn.addClass;
+    var originalRemoveClass = $.fn.removeClass;
+    
+    $.fn.addClass = function() {
+        var result = originalAddClass.apply(this, arguments);
+        // Ensure requestIdleCallback is available on all elements
+        this.each(function() {
+            if (this && typeof this.requestIdleCallback === 'undefined') {
+                this.requestIdleCallback = window.requestIdleCallback;
+                this.cancelIdleCallback = window.cancelIdleCallback;
+            }
+        });
+        return result;
+    };
+    
+    $.fn.removeClass = function() {
+        var result = originalRemoveClass.apply(this, arguments);
+        // Ensure requestIdleCallback is available on all elements
+        this.each(function() {
+            if (this && typeof this.requestIdleCallback === 'undefined') {
+                this.requestIdleCallback = window.requestIdleCallback;
+                this.cancelIdleCallback = window.cancelIdleCallback;
+            }
+        });
+        return result;
+    };
+});
+
+// New navbar functionality
+$(document).ready(function() {
+    // Fix dropdown links on mobile to prevent anchor conflicts
+    if ($(window).width() <= 768) {
+        $('.dropdown-toggle').each(function() {
+            var href = $(this).attr('href');
+            if (href && href.indexOf('#') !== -1) {
+                $(this).attr('data-original-href', href);
+                $(this).attr('href', '#');
+            }
+        });
+    }
+    
+    // Mobile menu toggle
+    $('#navbar-toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#navbar-menu').toggleClass('active');
     });
     
     // Mobile dropdown toggle
-    $('.dropdown > a').click(function(e) {
+    $('.dropdown-toggle').click(function(e) {
+        console.log('Dropdown toggle clicked, width:', $(window).width());
         if ($(window).width() <= 768) {
             e.preventDefault();
-            $(this).parent().toggleClass('active');
-        }
-    });
-    
-    // Close mobile menu when clicking on a link (except dropdown)
-    $('.topMenus a').click(function() {
-        if (!$(this).parent().hasClass('dropdown')) {
-            $('#nav-menu').removeClass('active');
+            e.stopPropagation();
+            
+            var $dropdown = $(this).parent();
+            var isActive = $dropdown.hasClass('active');
+            
+            console.log('Before: isActive =', isActive);
+            console.log('Before: dropdown classes =', $dropdown.attr('class'));
+            
+            try {
+                // Always close all dropdowns first
+                $('.dropdown').removeClass('active');
+                
+                // If it wasn't active, open it
+                if (!isActive) {
+                    $dropdown.addClass('active');
+                    console.log('Opening dropdown');
+                    // Keep main menu open when dropdown is active
+                    $('#navbar-menu').addClass('active');
+                    $('#navbar-toggle').addClass('active');
+                } else {
+                    console.log('Closing dropdown');
+                }
+            } catch (error) {
+                console.error('Error in dropdown toggle:', error);
+            }
+            
+            console.log('After: dropdown classes =', $dropdown.attr('class'));
+            
+            // Prevent default link behavior on mobile
+            return false;
         }
     });
     
     // Close mobile menu when clicking outside
     $(document).click(function(e) {
-        if (!$(e.target).closest('#navigation').length) {
-            $('#nav-menu').removeClass('active');
+        if (!$(e.target).closest('.navbar').length) {
+            $('#navbar-toggle').removeClass('active');
+            $('#navbar-menu').removeClass('active');
+            $('.dropdown').removeClass('active');
+        }
+    });
+    
+    // Close mobile menu when clicking on a link (but not dropdown toggle)
+    $('.nav-link').click(function(e) {
+        if ($(window).width() <= 768 && !$(this).hasClass('dropdown-toggle')) {
+            $('#navbar-toggle').removeClass('active');
+            $('#navbar-menu').removeClass('active');
+            $('.dropdown').removeClass('active');
+        }
+    });
+    
+    // Close mobile menu when clicking on dropdown links
+    $('.dropdown-menu a').click(function() {
+        if ($(window).width() <= 768) {
+            $('#navbar-toggle').removeClass('active');
+            $('#navbar-menu').removeClass('active');
+            $('.dropdown').removeClass('active');
+        }
+    });
+    
+    // Active menu item highlighting
+    $('.nav-link').click(function() {
+        $('.nav-item').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    
+    // Handle window resize
+    $(window).resize(function() {
+        if ($(window).width() > 768) {
+            // Restore original hrefs on desktop
+            $('.dropdown-toggle').each(function() {
+                var originalHref = $(this).attr('data-original-href');
+                if (originalHref) {
+                    $(this).attr('href', originalHref);
+                    $(this).removeAttr('data-original-href');
+                }
+            });
+        } else {
+            // Fix dropdown links on mobile
+            $('.dropdown-toggle').each(function() {
+                var href = $(this).attr('href');
+                if (href && href.indexOf('#') !== -1 && !$(this).attr('data-original-href')) {
+                    $(this).attr('data-original-href', href);
+                    $(this).attr('href', '#');
+                }
+            });
         }
     });
 });

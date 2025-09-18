@@ -42,19 +42,54 @@
     </style>
 </head>
 <body>
-    <div id="navigation">
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
-        <div id="nav-menu">
-            <ul class="topMenus">
-                <li><div id="logo"></div></li>
-                <li><a href="../index.php">HOME</a></li>
-                <li><a href="../index.php#portfolio">REALIZACJE</a></li>
-                <li><a href="../index.php#services">OFERTA</a></li>
-                <li><a href="../index.php#about">O NAS</a></li>
-                <li><a href="../index.php#contact">KONTAKT</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="../index.php">
+                    <img src="../images/logo.png" alt="INSTALPRINT" />
+                </a>
+            </div>
+            
+            <!-- Mobile menu toggle -->
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.php" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.php#portfolio" class="nav-link">REALIZACJE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../index.php#services" class="nav-link dropdown-toggle">OFERTA</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
+                            <li><a href="druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
+                            <li><a href="stojaki-wystawiennicze.html">Stojaki wystawiennicze</a></li>
+                            <li><a href="aplikacje-na-pojazdach.html">Aplikacje na pojazdach</a></li>
+                            <li><a href="reklama-swietlna.html">Reklama świetlna</a></li>
+                            <li><a href="montaz.html">Montaż</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.php#about" class="nav-link">O NAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.php#contact" class="nav-link">KONTAKT</a>
+                    </li>
             </ul>
         </div>
     </div>
+    </nav>
+    <!-- End: Navigation -->
     <div id="header">
         <div class="content">
             <div id="intro">
@@ -187,21 +222,87 @@
                 animationLoop: true
             });
             
+            // Polyfill for requestIdleCallback
+            if (!window.requestIdleCallback) {
+                window.requestIdleCallback = function(callback, options) {
+                    var start = Date.now();
+                    return setTimeout(function() {
+                        callback({
+                            didTimeout: false,
+                            timeRemaining: function() {
+                                return Math.max(0, 50 - (Date.now() - start));
+                            }
+                        });
+                    }, 1);
+                };
+            }
+
+            if (!window.cancelIdleCallback) {
+                window.cancelIdleCallback = function(id) {
+                    clearTimeout(id);
+                };
+            }
+
+            // New navbar functionality
             // Mobile menu toggle
-            $('#mobile-menu-toggle').click(function() {
-                $('#nav-menu').toggleClass('active');
+            $('#navbar-toggle').click(function() {
+                $(this).toggleClass('active');
+                $('#navbar-menu').toggleClass('active');
             });
             
-            // Close mobile menu when clicking on a link
-            $('.topMenus a').click(function() {
-                $('#nav-menu').removeClass('active');
+            // Mobile dropdown toggle
+            $('.dropdown-toggle').click(function(e) {
+                if ($(window).width() <= 768) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    var $dropdown = $(this).parent();
+                    var isActive = $dropdown.hasClass('active');
+                    
+                    // Always close all dropdowns first
+                    $('.dropdown').removeClass('active');
+                    
+                    // If it wasn't active, open it
+                    if (!isActive) {
+                        $dropdown.addClass('active');
+                        // Keep main menu open when dropdown is active
+                        $('#navbar-menu').addClass('active');
+                        $('#navbar-toggle').addClass('active');
+                    }
+                }
             });
             
             // Close mobile menu when clicking outside
             $(document).click(function(e) {
-                if (!$(e.target).closest('#navigation').length) {
-                    $('#nav-menu').removeClass('active');
+                if (!$(e.target).closest('.navbar').length) {
+                    $('#navbar-toggle').removeClass('active');
+                    $('#navbar-menu').removeClass('active');
+                    $('.dropdown').removeClass('active');
                 }
+            });
+            
+            // Close mobile menu when clicking on a link (but not dropdown toggle)
+            $('.nav-link').click(function(e) {
+                if ($(window).width() <= 768 && !$(this).hasClass('dropdown-toggle')) {
+                    $('#navbar-toggle').removeClass('active');
+                    $('#navbar-menu').removeClass('active');
+                    $('.dropdown').removeClass('active');
+                }
+            });
+            
+            // Close mobile menu when clicking on dropdown links
+            $('.dropdown-menu a').click(function() {
+                if ($(window).width() <= 768) {
+                    $('#navbar-toggle').removeClass('active');
+                    $('#navbar-menu').removeClass('active');
+                    $('.dropdown').removeClass('active');
+                }
+            });
+            
+            // Active menu item highlighting
+            $('.nav-link').click(function() {
+                $('.nav-item').removeClass('active');
+                $(this).parent().addClass('active');
             });
         });
     </script>
