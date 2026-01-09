@@ -109,7 +109,10 @@ $(document).ready(function () {
                     <ul class="dropdown-menu">
                         <li><a href="podstrony/druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
                         <li><a href="podstrony/druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
-                        <li><a href="podstrony/stojaki-wystawiennicze.html">Stojaki wystawiennicze</a></li>
+                        <li><a href="podstrony/wayfinding-oznakowanie.html">Wayfinding-oznakowanie</a></li>
+                        <li><a href="podstrony/oklejanie-witryn.html">Oklejanie witryn</a></li>
+                        <li><a href="podstrony/pylony-i-totemy.html">Pylony i totemy</a></li>
+                        <li><a href="podstrony/szyldy-reklamowe.html">Szyldy reklamowe</a></li>
                         <li><a href="podstrony/aplikacje-na-pojazdach.html">Aplikacje na pojazdach</a></li>
                         <li><a href="podstrony/reklama-swietlna.html">Reklama świetlna</a></li>
                         <li><a href="podstrony/montaz.html">Montaż</a></li>
@@ -1011,20 +1014,68 @@ $(document).ready(function () {
               <li>
                   <!-- Icon / Thumbnail -->
                   <div class="icon">
-                       <img src="images/service_icons/iphone_white.png" alt="" />
+                       <img src="images/service_icons/wayfinding_oznakowanie_white.png" alt="" />
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/stojaki-wystawiennicze.html" class="landing_page">Stojaki wystawiennicze</a></h3>
+                       <h3><a href="podstrony/wayfinding-oznakowanie.html" class="landing_page">Wayfinding-oznakowanie</a></h3>
                        <p>
                        Roll-upy to jedna z form reklamy wewnętrznej, często spotykana na różnego rodzaju wystawach i targach. Rozłożenie stojaka to czynność bardzo prosta i szybka, a złożony roll-up jest lekki i zajmuje niewiele miejsca. 
                        </p>
-                       <a href="podstrony/stojaki-wystawiennicze.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/wayfinding-oznakowanie.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
               
               <!-- 6th element -->
+              <li>
+                  <!-- Icon / Thumbnail -->
+                  <div class="icon">
+                       <img src="images/service_icons/witryny_white.png" alt="" style="width: 100px; height: 100px;" />
+                  </div>
+                  <!-- Content -->
+                  <div class="service_content">
+                       <h3><a href="podstrony/oklejanie-witryn.html" class="landing_page">Oklejanie witryn</a></h3>
+                       <p>
+                       Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić do dla waszej firmy. 
+                       </p>
+                       <a href="podstrony/oklejanie-witryn.html" class="read_more">Dowiedz się więcej</a>
+                  </div>
+              </li>
+              
+              <!-- 7th element -->
+              <li class="ls">
+                  <!-- Icon / Thumbnail -->
+                  <div class="icon">
+                       <img src="images/service_icons/pylony_white.png" alt="" style="width: 100px; height: 100px;"/>
+                  </div>
+                  <!-- Content -->
+                  <div class="service_content">
+                       <h3><a href="podstrony/pylony-i-totemy.html" class="landing_page">Pylony i totemy</a></h3>
+                       <p>
+                       Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie. 
+                       </p>
+                       <a href="podstrony/pylony-i-totemy.html" class="read_more">Dowiedz się więcej</a>
+                  </div>
+              </li>
+              
+              <!-- 8th element -->
+              <li>
+                  <!-- Icon / Thumbnail -->
+                  <div class="icon">
+                       <img src="images/service_icons/szyldy_reklamowe_white.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="service_content">
+                       <h3><a href="podstrony/szyldy-reklamowe.html" class="landing_page">Szyldy reklamowe</a></h3>
+                       <p>
+                       Profesjonalne szyldy reklamowe to wizytówka Twojej firmy. Oferujemy szyldy wykonane z różnych materiałów - od klasycznych tablic po nowoczesne szyldy podświetlane LED. Każdy projekt dopasowujemy indywidualnie do potrzeb klienta.
+                       </p>
+                       <a href="podstrony/szyldy-reklamowe.html" class="read_more">Dowiedz się więcej</a>
+                  </div>
+              </li>
+              
+              <!-- 9th element -->
               <li>
                   <!-- Icon / Thumbnail -->
                   <div class="icon">
@@ -1034,13 +1085,13 @@ $(document).ready(function () {
                   <div class="service_content">
                        <h3><a href="podstrony/aplikacje-na-pojazdach.html" class="landing_page">Aplikacje na pojazdach</a></h3>
                        <p>
-                       Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić do dla waszej firmy. 
+                       Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić to dla waszej firmy.
                        </p>
                        <a href="podstrony/aplikacje-na-pojazdach.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
-              <!-- 7th element -->
+              <!-- 10th element -->
               <li class="ls">
                   <!-- Icon / Thumbnail -->
                   <div class="icon">
@@ -1050,7 +1101,7 @@ $(document).ready(function () {
                   <div class="service_content">
                        <h3><a href="podstrony/reklama-swietlna.html" class="landing_page">Reklama świetlna</a></h3>
                        <p>
-                       Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie. 
+                       Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie.
                        </p>
                        <a href="podstrony/reklama-swietlna.html" class="read_more">Dowiedz się więcej</a>
                   </div>
