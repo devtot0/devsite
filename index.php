@@ -13,6 +13,11 @@
 <!-- Configure viewport for mobile / tabled devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+<!-- Disable cache for development -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 <!-- Shorcut icon -->
 <link rel="shortcut icon" href="images/favicon.html">
 <!-- Touch icon for non-Retina iPhone, iPod Touch, and Android 2.1+  -->
@@ -29,8 +34,8 @@
 <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 
 <!-- Styles -->
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
-<link rel="stylesheet" type="text/css" href="scripts/prettyphoto/css/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" href="styles/style.css?v=<?php echo time(); ?>" />
+<link rel="stylesheet" type="text/css" href="scripts/prettyphoto/css/prettyPhoto.css?v=<?php echo time(); ?>" />
 
 <!-- Scripts -->
 <script type="text/javascript" src="scripts/jquery.js"></script>

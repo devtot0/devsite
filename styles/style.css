@@ -267,6 +267,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
         transform: translateY(-20px);
         transition: all 0.3s ease;
         padding: 20px 0;
+        max-height: none;
+        overflow: visible;
     }
     
     .navbar-menu.active {
@@ -309,13 +311,14 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
         border-radius: 0;
         max-height: 0;
         overflow: hidden;
-        transition: all 0.3s ease;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
     
     .dropdown.active .dropdown-menu {
         opacity: 1;
         visibility: visible;
-        max-height: 600px;
+        max-height: 1000px;
+        overflow: visible;
     }
     
     .dropdown-menu li a {
