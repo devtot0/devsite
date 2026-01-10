@@ -34,19 +34,19 @@
 <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 
 <!-- Styles -->
-<link rel="stylesheet" type="text/css" href="styles/style.css?v=<?php echo time(); ?>" />
-<link rel="stylesheet" type="text/css" href="scripts/prettyphoto/css/prettyPhoto.css?v=<?php echo time(); ?>" />
+<link rel="stylesheet" type="text/css" href="styles/style.css?v=<?php echo filemtime('styles/style.css'); ?>" />
+<link rel="stylesheet" type="text/css" href="scripts/prettyphoto/css/prettyPhoto.css?v=<?php echo file_exists('scripts/prettyphoto/css/prettyPhoto.css') ? filemtime('scripts/prettyphoto/css/prettyPhoto.css') : time(); ?>" />
 
 <!-- Scripts -->
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/easing.js"></script>
-<script type="text/javascript" src="scripts/flexslider.js"></script>
-<script type="text/javascript" src="scripts/cycle.js"></script>
-<script type="text/javascript" src="scripts/prettyphoto/js/prettyPhoto.js"></script>
-<script type="text/javascript" src="scripts/tipTip.js"></script>
-<script type="text/javascript" src="scripts/mobilemenu.js"></script>
-<script type="text/javascript" src="scripts/portfolio.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/jquery.js?v=<?php echo file_exists('scripts/jquery.js') ? filemtime('scripts/jquery.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/easing.js?v=<?php echo file_exists('scripts/easing.js') ? filemtime('scripts/easing.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/flexslider.js?v=<?php echo file_exists('scripts/flexslider.js') ? filemtime('scripts/flexslider.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/cycle.js?v=<?php echo file_exists('scripts/cycle.js') ? filemtime('scripts/cycle.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/prettyphoto/js/prettyPhoto.js?v=<?php echo file_exists('scripts/prettyphoto/js/prettyPhoto.js') ? filemtime('scripts/prettyphoto/js/prettyPhoto.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/tipTip.js?v=<?php echo file_exists('scripts/tipTip.js') ? filemtime('scripts/tipTip.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/mobilemenu.js?v=<?php echo file_exists('scripts/mobilemenu.js') ? filemtime('scripts/mobilemenu.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/portfolio.js?v=<?php echo file_exists('scripts/portfolio.js') ? filemtime('scripts/portfolio.js') : time(); ?>"></script>
+<script type="text/javascript" src="scripts/custom.js?v=<?php echo file_exists('scripts/custom.js') ? filemtime('scripts/custom.js') : time(); ?>"></script>
 
 <script type="text/javascript">
 $(document).ready(function () {
@@ -74,10 +74,10 @@ $(document).ready(function () {
 <link href='https://fonts.googleapis.com/css?family=FONTFAMILY' rel='stylesheet' type="text/css" id="headings_font">
 <link href='https://fonts.googleapis.com/css?family=FONTFAMILY' rel='stylesheet' type="text/css" id="menu_font">
 <link href='https://fonts.googleapis.com/css?family=FONTFAMILY' rel='stylesheet' type="text/css" id="quote_font">
-<script type="text/javascript" src="styles/customizer/mCustomScrollbar.min.js"></script>
-<script type="text/javascript" src="styles/customizer/colorpicker.js"></script>
-<script type="text/javascript" src="styles/customizer/styleswitch.js"></script>
-<script type="text/javascript" src="styles/customizer/switcher.js"></script>
+<script type="text/javascript" src="styles/customizer/mCustomScrollbar.min.js?v=<?php echo file_exists('styles/customizer/mCustomScrollbar.min.js') ? filemtime('styles/customizer/mCustomScrollbar.min.js') : time(); ?>"></script>
+<script type="text/javascript" src="styles/customizer/colorpicker.js?v=<?php echo file_exists('styles/customizer/colorpicker.js') ? filemtime('styles/customizer/colorpicker.js') : time(); ?>"></script>
+<script type="text/javascript" src="styles/customizer/styleswitch.js?v=<?php echo file_exists('styles/customizer/styleswitch.js') ? filemtime('styles/customizer/styleswitch.js') : time(); ?>"></script>
+<script type="text/javascript" src="styles/customizer/switcher.js?v=<?php echo file_exists('styles/customizer/switcher.js') ? filemtime('styles/customizer/switcher.js') : time(); ?>"></script>
 
 </head>
 
@@ -1025,8 +1025,7 @@ $(document).ready(function () {
                   <div class="service_content">
                        <h3><a href="podstrony/wayfinding-oznakowanie.html" class="landing_page">Wayfinding-oznakowanie</a></h3>
                        <p>
-                       Roll-upy to jedna z form reklamy wewnętrznej, często spotykana na różnego rodzaju wystawach i targach. Rozłożenie stojaka to czynność bardzo prosta i szybka, a złożony roll-up jest lekki i zajmuje niewiele miejsca. 
-                       </p>
+Tworzymy przemyślane systemy wayfinding, które ułatwiają orientację w przestrzeni i pomagają klientom szybko dotrzeć tam, gdzie chcą. Nasze oznakowanie łączy funkcjonalność z estetyką, wzmacniając identyfikację wizualną Twojej marki.                       </p>
                        <a href="podstrony/wayfinding-oznakowanie.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
@@ -1058,8 +1057,7 @@ $(document).ready(function () {
                   <div class="service_content">
                        <h3><a href="podstrony/pylony-i-totemy.html" class="landing_page">Pylony i totemy</a></h3>
                        <p>
-                       Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie. 
-                       </p>
+Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z daleka i skutecznie przyciągają uwagę. Dzięki solidnej konstrukcji i atrakcyjnemu designowi Twoja firma będzie zauważalna w każdej lokalizacji.                       </p>
                        <a href="podstrony/pylony-i-totemy.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
@@ -1121,17 +1119,6 @@ $(document).ready(function () {
 
 </div>
 <!-- End: Services -->
-<script>
-$('document').ready(function(){
-	$('.service_content a').click(function(){
-	 $('html, body').animate({
-        scrollTop: $("#services_title").offset().top
-    }, 2000);
-	
-	});
-});
-	
-</script>
 <!-- About -->
 <div id="about">
 
@@ -1150,19 +1137,32 @@ $('document').ready(function(){
      
          <!-- <h3>Hi! I'm Jane Doe, an outstanding webdesigner!</h3>-->
           
-          <p>
-          Jesteśmy profesjonalnie działającą firmą od 2008 roku. Mimo, jak się może zdawać niewielkiego, bo kilku letniego doświadczenia, wciąż miło zaskakujemy swoich klientów kreatywnymi rozwiązaniami. Projektowanie reklam to nie tylko nasza pasja, ale całe życie. Nad Twoimi projektami pracuje sztab profesjonalistów, którzy nie boją się podjąć żadnego wyzwania. Cechuje nas indywidualne podejście do każdego naszego klienta, zdajemy sobie sprawę, że każdy z Państwa ma inne potrzeby. Jak nikt inny potrafimy słuchać potrzeb.
+          <p style="color: #333; text-align: justify; margin-bottom: 1.5em;">
+          Jesteśmy profesjonalną firmą działającą nieprzerwanie od 2008 roku, specjalizującą się w <strong>druku wielkoformatowym</strong> we <strong>Wrocławiu</strong>. Od lat wspieramy klientów w skutecznej komunikacji wizualnej, dostarczając nowoczesne, trwałe i estetyczne rozwiązania reklamowe.
           </p>
-
-          <div style="margin-top: 30px; padding: 25px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3FA1BF;">
-              <h3 style="color: #3FA1BF; font-family: 'Oswald', sans-serif; font-size: 20px; margin-bottom: 15px;">Reklama świetlna Wrocław – kompleksowa oferta</h3>
-              <p style="margin-bottom: 15px; color: gray;">
-              W <a href="https://www.instalprint.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">instalprint.pl</a> tworzymy nowoczesne reklamy świetlne we Wrocławiu, łącząc estetykę, funkcjonalność i skuteczność marketingową. Nasze realizacje przyciągają uwagę, wzmacniają identyfikację wizualną i realnie zwiększają rozpoznawalność marek.
-              </p>
-              <p style="margin-bottom: 15px; color: gray;">
-              Obsługujemy zarówno lokalne firmy, jak i duże sieci ogólnopolskie, oferując pełną obsługę – od projektu graficznego w <a href="https://foxmedia.com.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">foxmedia.com.pl</a>, poprzez produkcję, aż po profesjonalny montaż reklamy.
-              </p>
-          </div>
+          
+          <p style="color: #333; text-align: justify; margin-bottom: 1.5em;">
+          <strong>Druk wielkoformatowy</strong> to dla nas nie tylko usługa - to pasja i codzienna praca, którą wykonujemy z pełnym zaangażowaniem. Nad każdym projektem czuwa zespół doświadczonych specjalistów, którzy łączą wiedzę techniczną z kreatywnym podejściem i nie boją się niestandardowych wyzwań.
+          </p>
+          
+          <p style="color: #333; text-align: justify; margin-bottom: 1.5em;">
+          Każde zlecenie traktujemy indywidualnie, ponieważ doskonale rozumiemy, że każda marka ma inne cele i potrzeby. Uważnie słuchamy, doradzamy najlepsze rozwiązania i dbamy o każdy detal - od projektu, przez druk, aż po finalny efekt.
+          </p>
+          
+          <p style="color: #333; text-align: justify;">
+          Dzięki wieloletniemu doświadczeniu, nowoczesnemu zapleczu technologicznemu oraz terminowej realizacji zleceń, jesteśmy zaufanym partnerem w zakresie reklamy <strong>wielkoformatowej</strong> we <strong>Wrocławiu</strong> i okolicach. Stawiamy na jakość, estetykę i skuteczność - bo wiemy, że dobra reklama musi przyciągać uwagę.
+          </p>
+          
+          <p style="margin-top: 30px; text-align: center;">
+              <a href="podstrony/o-nas.html" class="read_more" style="display: inline-block; font-size: 16px; font-weight: bold; color: white; background-color: #3FA1BF; padding: 12px 30px; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(63, 161, 191, 0.3);">Dowiedz się więcej →</a>
+          </p>
+          <style>
+              #about_content .read_more:hover {
+                  background-color: #2d7a8f !important;
+                  box-shadow: 0 4px 8px rgba(63, 161, 191, 0.4) !important;
+                  transform: translateY(-2px);
+              }
+          </style>
 
      </div>
      
