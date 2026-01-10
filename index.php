@@ -112,15 +112,15 @@ $(document).ready(function () {
                 <li class="nav-item dropdown">
                     <a href="#services" class="nav-link dropdown-toggle">OFERTA</a>
                     <ul class="dropdown-menu">
-                        <li><a href="podstrony/druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
-                        <li><a href="podstrony/druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
-                        <li><a href="podstrony/wayfinding-oznakowanie.html">Wayfinding-oznakowanie</a></li>
-                        <li><a href="podstrony/oklejanie-witryn.html">Oklejanie witryn</a></li>
-                        <li><a href="podstrony/pylony-i-totemy.html">Pylony i totemy</a></li>
-                        <li><a href="podstrony/szyldy-reklamowe.html">Szyldy reklamowe</a></li>
-                        <li><a href="podstrony/oklejanie-pojazdow.html">Oklejanie pojazdów</a></li>
-                        <li><a href="podstrony/reklama-swietlna.html">Reklama świetlna</a></li>
-                        <li><a href="podstrony/montaz.html">Montaż</a></li>
+                        <li><a href="druk-wielkoformatowy.html">Druk wielkoformatowy</a></li>
+                        <li><a href="druk-cyfrowy-offsetowy.html">Druk cyfrowy - offsetowy</a></li>
+                        <li><a href="wayfinding-oznakowanie.html">Wayfinding-oznakowanie</a></li>
+                        <li><a href="oklejanie-witryn.html">Oklejanie witryn</a></li>
+                        <li><a href="pylony-i-totemy.html">Pylony i totemy</a></li>
+                        <li><a href="szyldy-reklamowe.html">Szyldy reklamowe</a></li>
+                        <li><a href="oklejanie-pojazdow.html">Oklejanie pojazdów</a></li>
+                        <li><a href="reklama-swietlna.html">Reklama świetlna</a></li>
+                        <li><a href="montaz.html">Montaż</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -974,11 +974,11 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/druk-wielkoformatowy.html" class="landing_page">Druk wielkoformatowy</a></h3>
+                       <h3><a href="druk-wielkoformatowy.html" class="landing_page">Druk wielkoformatowy</a></h3>
                        <p>
 						Potrzebują Państwo reklamy dużego formatu? Żaden kaliber i żaden wymiar pracy, nie jest wstanie nas przestraszyć. Wykonujemy zlecenia na wydruk wielkoformatowy. 
                        </p>
-                       <a href="podstrony/druk-wielkoformatowy.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="druk-wielkoformatowy.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
 
@@ -990,11 +990,11 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/druk-cyfrowy-offsetowy.html" class="landing_page">Druk cyfrowy - offsetowy</a></h3>
+                       <h3><a href="druk-cyfrowy-offsetowy.html" class="landing_page">Druk cyfrowy - offsetowy</a></h3>
                        <p>
                        Drukarnie cyfrowe to jeden z elementów naszych czasów. My oferujemy Państwu najwyższej klasy wydruk cyfrowy.  
                        </p>
-                       <a href="podstrony/druk-cyfrowy-offsetowy.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="druk-cyfrowy-offsetowy.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1006,12 +1006,12 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/montaz.html" class="landing_page">Montaż</a></h3>
+                       <h3><a href="montaz.html" class="landing_page">Montaż</a></h3>
                        <p>
                        Prace montażowe i zakresu aplikacji drukowanych reklam wykonujemy na terenie całej Polski. 
 						Dysponujemy doświadczoną ekipą alpinistów i wyklejaczy, dla których praca jest pasją i wyzwaniem, dla których nie ma niemożliwych do zrealizowania montaży. 
                        </p>
-                       <a href="podstrony/montaz.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="montaz.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1023,10 +1023,10 @@ $(document).ready(function () {
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/wayfinding-oznakowanie.html" class="landing_page">Wayfinding-oznakowanie</a></h3>
+                       <h3><a href="wayfinding-oznakowanie.html" class="landing_page">Wayfinding-oznakowanie</a></h3>
                        <p>
 Tworzymy przemyślane systemy wayfinding, które ułatwiają orientację w przestrzeni i pomagają klientom szybko dotrzeć tam, gdzie chcą. Nasze oznakowanie łączy funkcjonalność z estetyką, wzmacniając identyfikację wizualną Twojej marki.                       </p>
-                       <a href="podstrony/wayfinding-oznakowanie.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="wayfinding-oznakowanie.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1039,11 +1039,11 @@ Tworzymy przemyślane systemy wayfinding, które ułatwiają orientację w przes
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/oklejanie-witryn.html" class="landing_page">Oklejanie witryn</a></h3>
+                       <h3><a href="oklejanie-witryn.html" class="landing_page">Oklejanie witryn</a></h3>
                        <p>
                        Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić do dla waszej firmy. 
                        </p>
-                       <a href="podstrony/oklejanie-witryn.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="oklejanie-witryn.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1055,10 +1055,10 @@ Tworzymy przemyślane systemy wayfinding, które ułatwiają orientację w przes
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/pylony-i-totemy.html" class="landing_page">Pylony i totemy</a></h3>
+                       <h3><a href="pylony-i-totemy.html" class="landing_page">Pylony i totemy</a></h3>
                        <p>
 Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z daleka i skutecznie przyciągają uwagę. Dzięki solidnej konstrukcji i atrakcyjnemu designowi Twoja firma będzie zauważalna w każdej lokalizacji.                       </p>
-                       <a href="podstrony/pylony-i-totemy.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="pylony-i-totemy.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1070,11 +1070,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/szyldy-reklamowe.html" class="landing_page">Szyldy reklamowe</a></h3>
+                       <h3><a href="szyldy-reklamowe.html" class="landing_page">Szyldy reklamowe</a></h3>
                        <p>
                        Profesjonalne szyldy reklamowe to wizytówka Twojej firmy. Oferujemy szyldy wykonane z różnych materiałów - od klasycznych tablic po nowoczesne szyldy podświetlane LED. Każdy projekt dopasowujemy indywidualnie do potrzeb klienta.
                        </p>
-                       <a href="podstrony/szyldy-reklamowe.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="szyldy-reklamowe.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1086,11 +1086,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/oklejanie-pojazdow.html" class="landing_page">Oklejanie pojazdów</a></h3>
+                       <h3><a href="oklejanie-pojazdow.html" class="landing_page">Oklejanie pojazdów</a></h3>
                        <p>
                        Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić to dla waszej firmy.
                        </p>
-                       <a href="podstrony/oklejanie-pojazdow.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="oklejanie-pojazdow.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
@@ -1102,11 +1102,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/reklama-swietlna.html" class="landing_page">Reklama świetlna</a></h3>
+                       <h3><a href="reklama-swietlna.html" class="landing_page">Reklama świetlna</a></h3>
                        <p>
                        Podświetlane kasetony, pylony reklamowe stosowane są zarówno na zewnątrz, jak i wewnątrz gwarantują estetykę, która utwierdzi pozytywne wrażenie o Twojej firmie.
                        </p>
-                       <a href="podstrony/reklama-swietlna.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="reklama-swietlna.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
 
@@ -1154,7 +1154,7 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
           </p>
           
           <p style="margin-top: 30px; text-align: center;">
-              <a href="podstrony/o-nas.html" class="read_more" style="display: inline-block; font-size: 16px; font-weight: bold; color: white; background-color: #3FA1BF; padding: 12px 30px; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(63, 161, 191, 0.3);">Dowiedz się więcej →</a>
+              <a href="o-nas.html" class="read_more" style="display: inline-block; font-size: 16px; font-weight: bold; color: white; background-color: #3FA1BF; padding: 12px 30px; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(63, 161, 191, 0.3);">Dowiedz się więcej →</a>
           </p>
           <style>
               #about_content .read_more:hover {
