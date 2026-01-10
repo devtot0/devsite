@@ -118,7 +118,7 @@ $(document).ready(function () {
                         <li><a href="podstrony/oklejanie-witryn.html">Oklejanie witryn</a></li>
                         <li><a href="podstrony/pylony-i-totemy.html">Pylony i totemy</a></li>
                         <li><a href="podstrony/szyldy-reklamowe.html">Szyldy reklamowe</a></li>
-                        <li><a href="podstrony/aplikacje-na-pojazdach.html">Aplikacje na pojazdach</a></li>
+                        <li><a href="podstrony/oklejanie-pojazdow.html">Oklejanie pojazdów</a></li>
                         <li><a href="podstrony/reklama-swietlna.html">Reklama świetlna</a></li>
                         <li><a href="podstrony/montaz.html">Montaż</a></li>
                     </ul>
@@ -206,7 +206,7 @@ $(document).ready(function () {
                    <li class="separator">/</li>
                    <li><a href="#" class="category4">STOJAKI WYSTAWIENNICZE</a></li>
 				   <li class="separator">/</li>
-                   <li><a href="#" class="category5">APLIKACJE NA POJAZDACH</a></li>
+                   <li><a href="#" class="category5">OKLEJANIE POJAZDÓW</a></li>
                    <li class="separator">/</li>
                    <li><a href="#" class="category6">REKLAMA ŚWIETLNA</a></li>
                </ul>
@@ -1086,11 +1086,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
                   </div>
                   <!-- Content -->
                   <div class="service_content">
-                       <h3><a href="podstrony/aplikacje-na-pojazdach.html" class="landing_page">Aplikacje na pojazdach</a></h3>
+                       <h3><a href="podstrony/oklejanie-pojazdow.html" class="landing_page">Oklejanie pojazdów</a></h3>
                        <p>
                        Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić to dla waszej firmy.
                        </p>
-                       <a href="podstrony/aplikacje-na-pojazdach.html" class="read_more">Dowiedz się więcej</a>
+                       <a href="podstrony/oklejanie-pojazdow.html" class="read_more">Dowiedz się więcej</a>
                   </div>
               </li>
               
