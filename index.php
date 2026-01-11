@@ -204,7 +204,7 @@ $(document).ready(function () {
                    <li class="separator">/</li>
                    <li><a href="#" class="category3">MONTAŻ</a></li>
                    <li class="separator">/</li>
-                   <li><a href="#" class="category4">STOJAKI WYSTAWIENNICZE</a></li>
+                   <li><a href="#" class="category4">KASETONY - PYLONY</a></li>
 				   <li class="separator">/</li>
                    <li><a href="#" class="category5">OKLEJANIE POJAZDÓW</a></li>
                    <li class="separator">/</li>
@@ -1041,7 +1041,7 @@ Tworzymy przemyślane systemy wayfinding, które ułatwiają orientację w przes
                   <div class="service_content">
                        <h3><a href="oklejanie-witryn.html" class="landing_page">Oklejanie witryn</a></h3>
                        <p>
-                       Każdy pojazd jest uznawany na całym świecie jako jeden z najbardziej skutecznych form reklamy. Dzięki reklamie na pojazdach zwiększamy świadomość marki, mamy umiejętności, aby zrobić do dla waszej firmy. 
+                       Profesjonalne oklejanie witryn, które przyciąga wzrok i skutecznie eksponuje Twoją markę. Łączymy estetykę z funkcjonalnością, tworząc reklamy widoczne z daleka. Stosujemy trwałe materiały odporne na warunki atmosferyczne, zapewniające długotrwały efekt.
                        </p>
                        <a href="oklejanie-witryn.html" class="read_more">Dowiedz się więcej</a>
                   </div>
@@ -1265,6 +1265,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
                 <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Indywidualne podejście</div>
                 <p style="color: #666; margin: 0;">Każda reklama dopasowana do marki klienta</p>
             </div>
+            
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="color: #3FA1BF; font-size: 18px; font-weight: bold; margin-bottom: 10px;">✔ Oznakowanie firm</div>
+                <p style="color: #666; margin: 0;">Dokumentacja, projekt, wykonanie</p>
+            </div>
         </div>
     </div>
 </div>
@@ -1299,6 +1304,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
             <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
                 <div style="color: white; font-weight: bold; margin-bottom: 10px;">Krótkie terminy realizacji</div>
                 <p style="color: white; margin: 0; font-size: 14px;">bez kompromisów</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <div style="color: white; font-weight: bold; margin-bottom: 10px;">Produkcja reklam</div>
+                <p style="color: white; margin: 0; font-size: 14px;">funkcjonalność i nowoczesność</p>
             </div>
         </div>
         
