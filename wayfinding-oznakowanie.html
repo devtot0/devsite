@@ -99,14 +99,9 @@
                 <div id="welcome_text">Wayfinding – oznakowanie</div>
                 <h1>Oznakowanie biur, osiedli, hoteli i inwestycji</h1>
             </div>
-            <div class="simple-slider">
-                <div id="slider">
-                    <ul class="slides">
-                        <li><img src="images/slide4.jpg" alt="Stojaki - przykład 1" /></li>
-                        <li><img src="images/slide5.jpg" alt="Stojaki - przykład 2" /></li>
-                        <li><img src="images/slide3.jpg" alt="Stojaki - przykład 3" /></li>
-                    </ul>
-                </div>
+            <div class="simple-slider" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <img src="images/slider/hotel_morawa/pmd1.jpg" alt="Wayfinding - przykład 1" style="width: calc(50% - 7.5px); height: auto; border-radius: 8px;" />
+                <img src="images/slider/hotel_morawa/pmd2.jpg" alt="Wayfinding - przykład 2" style="width: calc(50% - 7.5px); height: auto; border-radius: 8px;" />
             </div>
         </div>
     </div>
@@ -188,19 +183,6 @@
     </div>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#slider').flexslider({
-                animation: "slide",
-                slideshow: true,
-                slideshowSpeed: 4000,
-                animationDuration: 600,
-                directionNav: true,
-                controlNav: false,
-                keyboardNav: true,
-                mousewheel: false,
-                pauseOnHover: true,
-                animationLoop: true
-            });
-            
             // Polyfill for requestIdleCallback
             if (!window.requestIdleCallback) {
                 window.requestIdleCallback = function(callback, options) {

@@ -1138,19 +1138,11 @@ Projektujemy i wykonujemy pylony oraz totemy reklamowe, które są widoczne z da
          <!-- <h3>Hi! I'm Jane Doe, an outstanding webdesigner!</h3>-->
           
           <p style="color: #333; text-align: justify; margin-bottom: 1.5em;">
-          Jesteśmy profesjonalną firmą działającą nieprzerwanie od 2008 roku, specjalizującą się w <strong>druku wielkoformatowym</strong> we <strong>Wrocławiu</strong>. Od lat wspieramy klientów w skutecznej komunikacji wizualnej, dostarczając nowoczesne, trwałe i estetyczne rozwiązania reklamowe.
-          </p>
-          
-          <p style="color: #333; text-align: justify; margin-bottom: 1.5em;">
-          <strong>Druk wielkoformatowy</strong> to dla nas nie tylko usługa - to pasja i codzienna praca, którą wykonujemy z pełnym zaangażowaniem. Nad każdym projektem czuwa zespół doświadczonych specjalistów, którzy łączą wiedzę techniczną z kreatywnym podejściem i nie boją się niestandardowych wyzwań.
-          </p>
-          
-          <p style="color: #333; text-align: justify; margin-bottom: 1.5em;">
-          Każde zlecenie traktujemy indywidualnie, ponieważ doskonale rozumiemy, że każda marka ma inne cele i potrzeby. Uważnie słuchamy, doradzamy najlepsze rozwiązania i dbamy o każdy detal - od projektu, przez druk, aż po finalny efekt.
+          W <a href="https://www.instalprint.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">instalprint.pl</a> tworzymy nowoczesne reklamy świetlne we Wrocławiu, łącząc estetykę, funkcjonalność i skuteczność marketingową. Nasze realizacje przyciągają uwagę, wzmacniają identyfikację wizualną i realnie zwiększają rozpoznawalność marek.
           </p>
           
           <p style="color: #333; text-align: justify;">
-          Dzięki wieloletniemu doświadczeniu, nowoczesnemu zapleczu technologicznemu oraz terminowej realizacji zleceń, jesteśmy zaufanym partnerem w zakresie reklamy <strong>wielkoformatowej</strong> we <strong>Wrocławiu</strong> i okolicach. Stawiamy na jakość, estetykę i skuteczność - bo wiemy, że dobra reklama musi przyciągać uwagę.
+          Obsługujemy zarówno lokalne firmy, jak i duże sieci ogólnopolskie, oferując pełną obsługę – od projektu graficznego w <a href="https://foxmedia.com.pl/" target="_blank" style="color: #3FA1BF; font-weight: bold;">foxmedia.com.pl</a>, poprzez produkcję, aż po profesjonalny montaż reklamy.
           </p>
           
           <p style="margin-top: 30px; text-align: center;">

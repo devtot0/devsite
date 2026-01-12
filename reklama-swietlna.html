@@ -37,8 +37,8 @@
         .cta-section { background: #f8f9fa; padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; }
         .cta-button { background: #3FA1BF; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px; transition: background 0.3s; }
         .cta-button:hover { background: #2d7a8f; color: white; }
-        .simple-slider { margin: 30px 0; }
-        .simple-slider img { width: 100%; height: auto; border-radius: 8px; }
+        .simple-slider { margin: 30px 0; display: block; }
+        .simple-slider img { width: 100%; height: auto; border-radius: 8px; display: block; max-width: 100%; }
     </style>
     
 </head>
@@ -101,13 +101,7 @@
                 <h1>Kasetony i litery 3D LED</h1>
             </div>
             <div class="simple-slider">
-                <div id="slider">
-                    <ul class="slides">
-                        <li><img src="images/slide_reklama_swietlna.jpg" alt="Reklama świetlna - przykład 1" /></li>
-                        <li><img src="images/slide3.jpg" alt="Reklama świetlna - przykład 2" /></li>
-                        <li><img src="images/slide4.jpg" alt="Reklama świetlna - przykład 3" /></li>
-                    </ul>
-                </div>
+                <img src="images/oferta/reklama_swietlna.jpg" alt="Reklama świetlna" style="width: 100%; height: auto; border-radius: 8px; display: block; max-width: 100%;" />
             </div>
         </div>
     </div>
@@ -206,19 +200,6 @@
     </div>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#slider').flexslider({
-                animation: "slide",
-                slideshow: true,
-                slideshowSpeed: 4000,
-                animationDuration: 600,
-                directionNav: true,
-                controlNav: false,
-                keyboardNav: true,
-                mousewheel: false,
-                pauseOnHover: true,
-                animationLoop: true
-            });
-            
             // Polyfill for requestIdleCallback
             if (!window.requestIdleCallback) {
                 window.requestIdleCallback = function(callback, options) {
