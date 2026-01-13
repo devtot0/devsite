@@ -628,7 +628,7 @@ $(document).ready(function () {
               </li>
 			  
 			  
-			  <li data-type="category4">
+			  <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_key.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_key_rollup_foxmedia.jpg" alt="" />
@@ -640,7 +640,7 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
-			  <li data-type="category4">
+			  <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_kinght_frank2.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_knight_frank_foxmedia2.jpg" alt="" />
@@ -652,7 +652,7 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
-			  <li data-type="category4">
+			  <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_arcelor_mittal.html" class="more_info">
                      <img src="images/portfolio_thumbss/blk_rollup_arcelor_mittal_instalprint.jpg" alt="" />
@@ -664,7 +664,7 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
-			  <li data-type="category4">
+			  <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_pgnig.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_stand_pgnig_foxmedia.jpg" alt="" />
@@ -676,7 +676,7 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
-			  <li data-type="category4">
+			  <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_starbucks.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_rollup_starbucks_foxmedia.jpg" alt="" />
@@ -688,7 +688,7 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
-              <li data-type="category4">
+              <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_vilpe.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_ekd.jpg" alt="" />
@@ -701,7 +701,7 @@ $(document).ready(function () {
                   </div>
               </li>
               
-              <li data-type="category4">
+              <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_powerline.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_stand_wizualizacja_v2.jpg" alt="" />
@@ -713,7 +713,7 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
-              <li data-type="category4">
+              <li data-type="category2">
                   <!-- Thumbnail -->
                   <a href="photo_polskiepomidory.htm" class="more_info">
                      <img src="images/portfolio_thumbss/blk_wizualizacja_stand_2.jpg" alt="" />
