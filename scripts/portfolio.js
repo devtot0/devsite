@@ -45,13 +45,15 @@ $(window).load(function(){
 
                var animation_speed = 300; //in milliseconds
                var category = $(this).attr('class');
+               // Map category4 to category6 so they show the same images
+               var filterCategory = (category == 'category4') ? 'category6' : category;
                var all_elements = 'div#portfolio_thumbs ul li';
-               var inactive_elements = 'div#portfolio_thumbs ul li[data-type!=' + category + ']';
-               var active_elements = 'div#portfolio_thumbs ul li[data-type=' + category + ']';
-               var inactive_rollover = 'div#portfolio_thumbs ul li[data-type!=' + category + '] img.rollover';
+               var inactive_elements = 'div#portfolio_thumbs ul li[data-type!=' + filterCategory + ']';
+               var active_elements = 'div#portfolio_thumbs ul li[data-type=' + filterCategory + ']';
+               var inactive_rollover = 'div#portfolio_thumbs ul li[data-type!=' + filterCategory + '] img.rollover';
                var all_images = 'div#portfolio_thumbs ul li img';
                var no_effect = 'div#portfolio_thumbs ul li img.noeffect';
-               var inactive_overlay = 'div#portfolio_thumbs ul li[data-type!=' + category + '] div.item_info';
+               var inactive_overlay = 'div#portfolio_thumbs ul li[data-type!=' + filterCategory + '] div.item_info';
                var blocked_overlay = 'div#portfolio_thumbs ul li div.noeffect';
 
                if ( category == 'all' )
