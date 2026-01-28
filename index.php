@@ -204,11 +204,17 @@ $(document).ready(function () {
                    <li class="separator">/</li>
                    <li><a href="#" class="category3">MONTAŻ</a></li>
                    <li class="separator">/</li>
-                   <li><a href="#" class="category4">KASETONY - PYLONY</a></li>
+                   <li><a href="#" class="category4">PYLONY I TOTEMY</a></li>
 				   <li class="separator">/</li>
                    <li><a href="#" class="category5">OKLEJANIE POJAZDÓW</a></li>
                    <li class="separator">/</li>
                    <li><a href="#" class="category6">REKLAMA ŚWIETLNA</a></li>
+                   <li class="separator">/</li>
+                   <li><a href="#" class="category7">OKLEJANIE WITRYN</a></li>
+                   <li class="separator">/</li>
+                   <li><a href="#" class="category8">SZYLDY REKLAMOWE</a></li>
+                   <li class="separator">/</li>
+                   <li><a href="#" class="category9">WAYFINDING - OZNAKOWANIE</a></li>
                </ul>
           </div>
      <div class="clear"></div>

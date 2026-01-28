@@ -417,10 +417,10 @@ div#portfolio_title { margin-bottom: 33px; }
 div#portfolio_title h2 { color: #FFF; }
 
 /*-- 2. Filter --*/
-div#filter {  border-top: 1px solid #3ea1bd; }
-div#filter_wrapper { float: left; position: relative; margin-bottom: 15px; left: 50%}
-ul#portfolioFilter { line-height: 18px; float: left; position: relative; left: -50%; }
-ul#portfolioFilter li { float: left; height: 46px; line-height: 46px; padding-right: 15px; padding-left: 15px; }
+div#filter { border-top: 1px solid #3ea1bd; display: flex; justify-content: center; }
+div#filter_wrapper { float: none; position: relative; margin-bottom: 15px; left: auto; }
+ul#portfolioFilter { line-height: 18px; float: none; position: relative; left: auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0; padding: 0; list-style: none; }
+ul#portfolioFilter li { float: none; height: 46px; line-height: 46px; padding-right: 15px; padding-left: 15px; }
 ul#portfolioFilter li.separator { line-height: 49px; padding: 0px; color: #3ea1bd; font-size: 12px; font-weight:bold; }
 ul#portfolioFilter li a { font-size: 18px; color: #ffffff; text-transform:uppercase;}
 ul#portfolioFilter li a:hover { font-size: 18px; color: #3ea1bd; text-transform:uppercase;}
