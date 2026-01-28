@@ -935,6 +935,272 @@ $(document).ready(function () {
                        <p></p>
                   </div>
               </li>
+              <!-- Kafelki z oferty: category4 Pylony i totemy -->
+              <li data-type="category4" class="tile-oferta">
+                  <a href="pylony-i-totemy.html" class="more_info" title="Pylony i totemy">
+                     <img src="images/oferta/pylony_i_totemy_1.jpg" alt="Pylony i totemy" />
+                     <img src="images/oferta/pylony_i_totemy_1.jpg" alt="Pylony i totemy" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="pylony-i-totemy.html" class="more_info">Pylony i totemy</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category4" class="tile-oferta">
+                  <a href="pylony-i-totemy.html" class="more_info" title="Pylony i totemy">
+                     <img src="images/oferta/pylony_i_totemy_2.JPG" alt="Pylony i totemy" />
+                     <img src="images/oferta/pylony_i_totemy_2.JPG" alt="Pylony i totemy" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="pylony-i-totemy.html" class="more_info">Pylony i totemy</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category4" class="tile-oferta">
+                  <a href="pylony-i-totemy.html" class="more_info" title="Pylony i totemy">
+                     <img src="images/oferta/pylony_i_totemy_3.JPG" alt="Pylony i totemy" />
+                     <img src="images/oferta/pylony_i_totemy_3.JPG" alt="Pylony i totemy" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="pylony-i-totemy.html" class="more_info">Pylony i totemy</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category4" class="tile-oferta">
+                  <a href="pylony-i-totemy.html" class="more_info" title="Pylony i totemy">
+                     <img src="images/oferta/pylony_i_totemy_4..jpg" alt="Pylony i totemy" />
+                     <img src="images/oferta/pylony_i_totemy_4..jpg" alt="Pylony i totemy" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="pylony-i-totemy.html" class="more_info">Pylony i totemy</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <!-- category5 Oklejanie pojazdów -->
+              <li data-type="category5" class="tile-oferta">
+                  <a href="oklejanie-pojazdow.html" class="more_info" title="Oklejanie pojazdów">
+                     <img src="images/oferta/oklejanie_pojazdow_1.jpg" alt="Oklejanie pojazdów" />
+                     <img src="images/oferta/oklejanie_pojazdow_1.jpg" alt="Oklejanie pojazdów" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="oklejanie-pojazdow.html" class="more_info">Oklejanie pojazdów</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category5" class="tile-oferta">
+                  <a href="oklejanie-pojazdow.html" class="more_info" title="Oklejanie pojazdów">
+                     <img src="images/oferta/oklejanie_pojazdow_2.JPG" alt="Oklejanie pojazdów" />
+                     <img src="images/oferta/oklejanie_pojazdow_2.JPG" alt="Oklejanie pojazdów" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="oklejanie-pojazdow.html" class="more_info">Oklejanie pojazdów</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category5" class="tile-oferta">
+                  <a href="oklejanie-pojazdow.html" class="more_info" title="Oklejanie pojazdów">
+                     <img src="images/oferta/oklejanie_pojazdow_3.jpg" alt="Oklejanie pojazdów" />
+                     <img src="images/oferta/oklejanie_pojazdow_3.jpg" alt="Oklejanie pojazdów" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="oklejanie-pojazdow.html" class="more_info">Oklejanie pojazdów</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <!-- category6 Reklama świetlna (z oferty) -->
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_1.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_1.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_2.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_2.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_3.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_3.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_4.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_4.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_5.JPG" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_5.JPG" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_6.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_6.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_7.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_7.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_8.JPG" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_8.JPG" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category6" class="tile-oferta">
+                  <a href="reklama-swietlna.html" class="more_info" title="Reklama świetlna">
+                     <img src="images/oferta/reklama_swietlna_9.jpg" alt="Reklama świetlna" />
+                     <img src="images/oferta/reklama_swietlna_9.jpg" alt="Reklama świetlna" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="reklama-swietlna.html" class="more_info">Reklama świetlna</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <!-- category7 Oklejanie witryn -->
+              <li data-type="category7" class="tile-oferta">
+                  <a href="oklejanie-witryn.html" class="more_info" title="Oklejanie witryn">
+                     <img src="images/oferta/oklejanie witryn.jpeg" alt="Oklejanie witryn" />
+                     <img src="images/oferta/oklejanie witryn.jpeg" alt="Oklejanie witryn" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="oklejanie-witryn.html" class="more_info">Oklejanie witryn</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category7" class="tile-oferta">
+                  <a href="oklejanie-witryn.html" class="more_info" title="Oklejanie witryn">
+                     <img src="images/oferta/oklejanie witryn .jpeg" alt="Oklejanie witryn" />
+                     <img src="images/oferta/oklejanie witryn .jpeg" alt="Oklejanie witryn" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="oklejanie-witryn.html" class="more_info">Oklejanie witryn</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <!-- category8 Szyldy reklamowe -->
+              <li data-type="category8" class="tile-oferta">
+                  <a href="szyldy-reklamowe.html" class="more_info" title="Szyldy reklamowe">
+                     <img src="images/oferta/szyldy.jpeg" alt="Szyldy reklamowe" />
+                     <img src="images/oferta/szyldy.jpeg" alt="Szyldy reklamowe" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="szyldy-reklamowe.html" class="more_info">Szyldy reklamowe</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category8" class="tile-oferta">
+                  <a href="szyldy-reklamowe.html" class="more_info" title="Szyldy reklamowe">
+                     <img src="images/oferta/szyldy reklamowe.JPG" alt="Szyldy reklamowe" />
+                     <img src="images/oferta/szyldy reklamowe.JPG" alt="Szyldy reklamowe" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="szyldy-reklamowe.html" class="more_info">Szyldy reklamowe</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <!-- category9 Wayfinding - oznakowanie -->
+              <li data-type="category9" class="tile-oferta">
+                  <a href="wayfinding-oznakowanie.html" class="more_info" title="Wayfinding - oznakowanie">
+                     <img src="images/oferta/wayfinding_oznakowanie_1.jpg" alt="Wayfinding - oznakowanie" />
+                     <img src="images/oferta/wayfinding_oznakowanie_1.jpg" alt="Wayfinding - oznakowanie" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="wayfinding-oznakowanie.html" class="more_info">Wayfinding - oznakowanie</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category9" class="tile-oferta">
+                  <a href="wayfinding-oznakowanie.html" class="more_info" title="Wayfinding - oznakowanie">
+                     <img src="images/oferta/wayfinding_oznakowanie_2.jpg" alt="Wayfinding - oznakowanie" />
+                     <img src="images/oferta/wayfinding_oznakowanie_2.jpg" alt="Wayfinding - oznakowanie" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="wayfinding-oznakowanie.html" class="more_info">Wayfinding - oznakowanie</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category9" class="tile-oferta">
+                  <a href="wayfinding-oznakowanie.html" class="more_info" title="Wayfinding - oznakowanie">
+                     <img src="images/oferta/wayfinding_oznakowanie_3.JPG" alt="Wayfinding - oznakowanie" />
+                     <img src="images/oferta/wayfinding_oznakowanie_3.JPG" alt="Wayfinding - oznakowanie" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="wayfinding-oznakowanie.html" class="more_info">Wayfinding - oznakowanie</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category9" class="tile-oferta">
+                  <a href="wayfinding-oznakowanie.html" class="more_info" title="Wayfinding - oznakowanie">
+                     <img src="images/oferta/wayfinding_oznakowanie_4.JPG" alt="Wayfinding - oznakowanie" />
+                     <img src="images/oferta/wayfinding_oznakowanie_4.JPG" alt="Wayfinding - oznakowanie" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="wayfinding-oznakowanie.html" class="more_info">Wayfinding - oznakowanie</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category9" class="tile-oferta">
+                  <a href="wayfinding-oznakowanie.html" class="more_info" title="Wayfinding - oznakowanie">
+                     <img src="images/oferta/wayfinding_oznakowanie_5.JPG" alt="Wayfinding - oznakowanie" />
+                     <img src="images/oferta/wayfinding_oznakowanie_5.JPG" alt="Wayfinding - oznakowanie" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="wayfinding-oznakowanie.html" class="more_info">Wayfinding - oznakowanie</a></h3>
+                       <p></p>
+                  </div>
+              </li>
+              <li data-type="category9" class="tile-oferta">
+                  <a href="wayfinding-oznakowanie.html" class="more_info" title="Wayfinding - oznakowanie">
+                     <img src="images/oferta/wayfinding_oznakowanie_6.JPG" alt="Wayfinding - oznakowanie" />
+                     <img src="images/oferta/wayfinding_oznakowanie_6.JPG" alt="Wayfinding - oznakowanie" class="rollover" />
+                  </a>
+                  <div class="item_info">
+                       <h3><a href="wayfinding-oznakowanie.html" class="more_info">Wayfinding - oznakowanie</a></h3>
+                       <p></p>
+                  </div>
+              </li>
           </ul>
 
      <div class="clear"></div>

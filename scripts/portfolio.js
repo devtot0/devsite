@@ -45,8 +45,7 @@ $(window).load(function(){
 
                var animation_speed = 300; //in milliseconds
                var category = $(this).attr('class');
-               // Map category4 to category6 so they show the same images
-               var filterCategory = (category == 'category4') ? 'category6' : category;
+               var filterCategory = category;
                var all_elements = 'div#portfolio_thumbs ul li';
                var inactive_elements = 'div#portfolio_thumbs ul li[data-type!=' + filterCategory + ']';
                var active_elements = 'div#portfolio_thumbs ul li[data-type=' + filterCategory + ']';
