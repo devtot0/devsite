@@ -166,9 +166,9 @@ $(document).ready(function () {
                            <img src="images/slide2.jpg" alt="" />
                        </li>
                        <li><img src="images/slide3.jpg" alt="" /></li>
-                       <li><img src="images/slide4.jpg" alt="" /></li>
                        <li><img src="images/slide5.jpg" alt="" /></li>
                        <li><img src="images/slide_reklama_swietlna.jpg" alt="" /></li>
+                       <li><img src="images/portfolio_slides/slider_Wayfinding-oznakowanie.jpg" alt="Wayfinding - oznakowanie" /></li>
                    </ul>
 
               </div>
